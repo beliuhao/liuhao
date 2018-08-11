@@ -3,5 +3,13 @@
   height: 100px;
 }
 #slide-out {
-  width: 200px;
+  width: 150px;
+}
+
+.sidenav li > a {
+  padding: 0 20px;
+}
+
+.sidenav li > a > i.material-icons {
+  margin: 0 20px 0 0;
 }
