@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,39 @@
 
   <title>Liu Hao | Front-end Web Developer</title>
 </head>
-<body>
 
+<body>
+  <!-- Navigation Menu-->
+  <!-- import the sidenav component from Materialize -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+        <a href="#">
+          <img src="src/img/liuhao.jpg" alt="Liu Hao">
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#">section 1</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#">section 2</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#">section 3</a>
+      </li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
 
   <!-- Materialize JavaScript-->
   <script src="node_modules/materialize-css/dist/js/materialize.js"></script>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // init the sidenav instance
+      let sideNavEl = document.querySelectorAll(".sidenav");
+      let instanceOfSideNav = M.Sidenav.init(sideNavEl, {});
+    })
+  </script>
 </body>
+
 </html>
