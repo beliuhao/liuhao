@@ -13,3 +13,12 @@
 .sidenav li > a > i.material-icons {
   margin: 0 20px 0 0;
 }
+
+ul.sidenav > li:nth-child(1) {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+ul.sidenav > li:nth-child(1) > a:hover {
+  background-color: white;
+}
