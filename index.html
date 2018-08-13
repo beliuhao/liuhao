@@ -8,7 +8,8 @@
   <!-- Materialize CSS-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
-
+  <!-- pt particle CSS -->
+  <link rel="stylesheet" href="src/css/canvas.css">
   <!-- Customized CSS -->
   <link rel="stylesheet" href="src/css/main.css">
   <title>Liu Hao | Front-end Web Developer</title>
@@ -68,6 +69,7 @@
   <main>
     <!-- section Intro -->
     <section id="intro" class="section">
+      <div id="pt" class="canvas"></div>
       <h3>Welcome</h3>
       <div class="container">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero deleniti odio maxime molestias beatae enim consectetur similique, cupiditate sit. Libero eius mollitia accusantium inventore saepe id nihil officia molestiae sint!</p>
@@ -84,6 +86,10 @@
 
   <!-- Materialize JavaScript-->
   <script src="node_modules/materialize-css/dist/js/materialize.js"></script>
+  <!-- pt particle JavaScript-->
+  <script src="src/js/pt.min.js"></script>
+  <script src="src/js/canvas.js"></script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       // init the sidenav instance
