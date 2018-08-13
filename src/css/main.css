@@ -2,23 +2,24 @@
   width: 100px;
   height: 100px;
 }
+/* sidenav width */
 #slide-out {
   width: 150px;
 }
 
+/* narrow the total width */
 .sidenav li > a {
   padding: 0 20px;
 }
-
 .sidenav li > a > i.material-icons {
   margin: 0 20px 0 0;
 }
-
+/* add some padding to the logo and a bottom border to its parent */
 ul.sidenav > li:nth-child(1) {
   padding: 10px 0;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
-
+/* remove the logo hover effect */
 ul.sidenav > li:nth-child(1) > a:hover {
   background-color: white;
 }
