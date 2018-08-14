@@ -6,6 +6,10 @@
 #slide-out {
   width: 150px;
 }
+/* main width */
+main {
+  padding-left: 150px;
+}
 
 /* narrow the total width */
 .sidenav li > a {
