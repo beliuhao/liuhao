@@ -27,3 +27,7 @@ ul.sidenav > li:nth-child(1) {
 ul.sidenav > li:nth-child(1) > a:hover {
   background-color: white;
 }
+/* make the intro section full height */
+.full-height {
+  height: 100vh;
+}
