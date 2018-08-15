@@ -31,3 +31,9 @@ ul.sidenav > li:nth-child(1) > a:hover {
 .full-height {
   height: 100vh;
 }
+/* fixedNav only show when sidenav is hidden */
+@media(min-width: 992px) {
+  #fixedNav {
+    display: none;
+  }
+}
