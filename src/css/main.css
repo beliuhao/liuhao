@@ -4,13 +4,8 @@
 }
 /* sidenav width */
 #slide-out {
-  width: 150px;
+  width: 180px;
 }
-/* main width */
-main {
-  padding-left: 150px;
-}
-
 /* narrow the total width */
 ul.sidenav li > a {
   padding: 0 20px;
@@ -81,10 +76,52 @@ ul.sidenav li:not(:nth-child(1)) a.active {
   font-size: 35px;
   padding: 15px;
 }
+
+/* main width */
+main {
+  padding-left: 180px;
+}
+
+/* section Intro */
+section#intro {
+  padding-top: 85px;
+}
+#intro h3, #intro p {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+#intro h3 {
+  font-size: 45px;
+}
+
+#intro p {
+  font-size: 25px;
+  color: rgb(122, 122, 122);
+}
+
+.highlight {
+  border-bottom: 2px solid rgb(227, 27, 109);
+}
+
+
+
+
+
+
+
+
 /* fixedNav only show when sidenav is hidden */
 @media(min-width: 992px) {
   #fixedNav {
     display: none;
+  }
+}
+
+@media(max-width: 992px) {
+  main {
+    margin-top: 0px;
+    padding-left: 0;
   }
 }
 
