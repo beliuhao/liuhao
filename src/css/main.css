@@ -40,7 +40,7 @@ ul.sidenav li:not(:nth-child(1)) a.active {
   z-index: 1;
   height: 65px;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: rgba(244, 244, 244, 0.9);
   color: #555;
   font-size: 1.2rem;
   display: flex;
