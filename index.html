@@ -87,7 +87,7 @@
         <h3>I'm <span class="highlight">Liu Hao</span></h3>
         <p>A self-taught programmer & life-long learner.</p>
         <div id="pulseBtn">
-          <a href="#contact" class="btn-floating cyan pulse">
+          <a href="#about" class="btn-floating cyan pulse">
             <i class="material-icons">keyboard_arrow_down</i>
           </a>
         </div>
@@ -156,8 +156,18 @@
       let instanceOfSideNav = M.Sidenav.init(sideNavEl, {});
       // init the scrollspy instance
       let scrollSpyEl = document.querySelectorAll('.scrollspy');
-      let instancesOfScrollSpy = M.ScrollSpy.init(scrollSpyEl, {});
-    })
+      let instancesOfScrollSpy = M.ScrollSpy.init(scrollSpyEl, {
+        scrollOffset: 0
+      });
+      //
+      document.querySelector('#pulseBtn a').addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: "start"
+          });
+        });
+      })
   </script>
 </body>
 
