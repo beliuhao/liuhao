@@ -38,10 +38,26 @@ ul.sidenav > li:nth-child(1) > a:hover {
   z-index: 1;
 }
 
+nav {
+  height: 65px;
+  background-color: #f6f6f6;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: #555;
+}
+
 #menu {
   position: fixed;
   top: 0;
   z-index: 2;
+}
+
+#menu > .material-icons {
+  font-size: 35px;
+  padding: 15px;
 }
 /* fixedNav only show when sidenav is hidden */
 @media(min-width: 992px) {
