@@ -85,10 +85,10 @@ main {
 /* section Intro */
 section#intro {
   padding-top: 85px;
+  text-align: center;
 }
 #intro h3, #intro p {
   font-family: "Raleway", sans-serif;
-  text-align: center;
 }
 
 #intro h3 {
@@ -98,6 +98,10 @@ section#intro {
 #intro p {
   font-size: 25px;
   color: rgb(122, 122, 122);
+}
+
+#intro div#pulseBtn a {
+  z-index: 0;
 }
 
 .highlight {
