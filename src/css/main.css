@@ -75,6 +75,7 @@ ul.sidenav li:not(:nth-child(1)) a.active {
 #menu > .material-icons {
   font-size: 35px;
   padding: 15px;
+  color: rgb(227, 27, 109);
 }
 
 /* main width */
