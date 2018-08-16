@@ -12,10 +12,10 @@ main {
 }
 
 /* narrow the total width */
-.sidenav li > a {
+ul.sidenav li > a {
   padding: 0 20px;
 }
-.sidenav li > a > i.material-icons {
+ul.sidenav li > a > i.material-icons {
   margin: 0 20px 0 0;
 }
 /* add some padding to the logo and a bottom border to its parent */
@@ -27,6 +27,18 @@ ul.sidenav > li:nth-child(1) {
 ul.sidenav > li:nth-child(1) > a:hover {
   background-color: white;
 }
+
+ul.sidenav li:not(:nth-child(1)) a.active,
+ul.sidenav li:not(:nth-child(1)) a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-left: 2px solid rgb(255, 0, 0);
+}
+
+ul.sidenav li:not(:nth-child(1)) a.active {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* make the intro section full height */
 .full-height {
   height: 100vh;
