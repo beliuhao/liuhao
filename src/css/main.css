@@ -49,7 +49,7 @@ ul.sidenav > li:nth-child(1) > a:hover {
 
 #navContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 7.5px;
