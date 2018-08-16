@@ -75,3 +75,18 @@ ul.sidenav > li:nth-child(1) > a:hover {
     display: none;
   }
 }
+
+@media(max-width: 512px) {
+  #fixedNav{
+    align-items: flex-end;
+  }
+  #navContainer {
+    flex-direction: column;
+  }
+  #navContainer div {
+    align-self: flex-end;
+  }
+  #navContainer i {
+    display: none;
+  }
+}
