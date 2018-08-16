@@ -171,7 +171,12 @@
 
       let sidenavLink = document.querySelectorAll("ul#slide-out li a");
       sidenavLink.forEach(achor => {
-        achor.addEventListener("click", function() {
+        achor.addEventListener("click", function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: "start"
+          });
           sidenavLink.forEach(a => {
             a.classList.remove("active");
           })
