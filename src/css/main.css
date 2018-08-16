@@ -33,13 +33,13 @@ ul.sidenav > li:nth-child(1) > a:hover {
 }
 
 #fixedNav {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   z-index: 1;
 }
 
 #menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 2;
 }
