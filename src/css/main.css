@@ -34,11 +34,6 @@ ul.sidenav li:not(:nth-child(1)) a.active {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* make the intro section full height */
-.full-height {
-  height: 100vh;
-}
-
 #fixedNav {
   position: fixed;
   top: 0;
@@ -108,6 +103,22 @@ section#intro {
 .highlight {
   border-bottom: 2px solid rgb(227, 27, 109);
 }
+
+/* make the section full height */
+.full-height {
+  height: 100vh;
+}
+/* section About */
+
+/* section Education */
+
+/* section Experience */
+
+/* section Projects */
+
+/* section Skills */
+
+/* section Contact */
 
 
 
