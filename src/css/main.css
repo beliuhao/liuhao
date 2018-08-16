@@ -27,11 +27,12 @@ ul.sidenav li:not(:nth-child(1)) a.active,
 ul.sidenav li:not(:nth-child(1)) a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  border-left: 5px solid rgb(255, 0, 0);
+  /* border-left: 5px solid rgb(255, 0, 0); */
 }
 
 ul.sidenav li:not(:nth-child(1)) a.active {
   background-color: rgba(0, 0, 0, 0.4);
+  border-left: 5px solid rgb(255, 0, 0);
 }
 
 #fixedNav {

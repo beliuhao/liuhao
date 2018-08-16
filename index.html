@@ -94,7 +94,7 @@
       </div>
     </section>
     <!-- section About -->
-    <section id="about" class="section scrollspy full-height">
+    <section id="about" class="section full-height">
       <h3 class="page-title white-text red accent-2">About</h3>
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus eaque nostrum provident eius placeat quis
@@ -102,7 +102,7 @@
       </div>
     </section>
     <!-- section Education -->
-    <section id="education" class="section scrollspy full-height">
+    <section id="education" class="section full-height">
       <h3 class="page-title white-text blue darken-1">Education</h3>
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus eaque nostrum provident eius placeat quis
@@ -110,7 +110,7 @@
       </div>
     </section>
     <!-- section Experience -->
-    <section id="experience" class="section scrollspy full-height">
+    <section id="experience" class="section full-height">
       <h3 class="page-title white-text orange darken-1">Experience</h3>
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus eaque nostrum provident eius placeat quis
@@ -118,7 +118,7 @@
       </div>
     </section>
     <!-- section Projects -->
-    <section id="projects" class="section scrollspy full-height">
+    <section id="projects" class="section full-height">
       <h3 class="page-title white-text green darken-1">Projects</h3>
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus eaque nostrum provident eius placeat quis
@@ -126,7 +126,7 @@
       </div>
     </section>
     <!-- section Skills -->
-    <section id="skills" class="section scrollspy full-height">
+    <section id="skills" class="section full-height">
       <h3 class="page-title white-text purple darken-1">Skills</h3>
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus eaque nostrum provident eius placeat quis
@@ -134,7 +134,7 @@
       </div>
     </section>
     <!-- section Contact -->
-    <section id="contact" class="section scrollspy full-height">
+    <section id="contact" class="section full-height">
       <h3 class="page-title white-text teal darken-1">Contact</h3>
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus eaque nostrum provident eius placeat quis
@@ -155,10 +155,10 @@
       let sideNavEl = document.querySelectorAll(".sidenav");
       let instanceOfSideNav = M.Sidenav.init(sideNavEl, {});
       // init the scrollspy instance
-      let scrollSpyEl = document.querySelectorAll('.scrollspy');
-      let instancesOfScrollSpy = M.ScrollSpy.init(scrollSpyEl, {
-        scrollOffset: 0
-      });
+      // let scrollSpyEl = document.querySelectorAll('.scrollspy');
+      // let instancesOfScrollSpy = M.ScrollSpy.init(scrollSpyEl, {
+      //   scrollOffset: 0
+      // });
       //
       document.querySelector('#pulseBtn a').addEventListener('click', function (e) {
           e.preventDefault();
@@ -167,6 +167,16 @@
             block: "start"
           });
         });
+      })
+
+      let sidenavLink = document.querySelectorAll("ul#slide-out li a");
+      sidenavLink.forEach(achor => {
+        achor.addEventListener("click", function() {
+          sidenavLink.forEach(a => {
+            a.classList.remove("active");
+          })
+          this.classList.add("active");
+        })
       })
   </script>
 </body>
