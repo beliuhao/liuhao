@@ -33,20 +33,30 @@ ul.sidenav > li:nth-child(1) > a:hover {
 }
 
 #fixedNav {
-  /* position: absolute; */
+  position: fixed;
   top: 0;
   z-index: 1;
-}
-
-nav {
   height: 65px;
+  width: 100%;
   background-color: #f6f6f6;
   color: #555;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-nav a {
-  color: #555;
+#navContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5px;
+}
+
+#navContainer div {
+  height: 25px;
 }
 
 #menu {
