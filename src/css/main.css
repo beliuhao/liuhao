@@ -70,12 +70,30 @@ ul.sidenav li:not(:nth-child(1)) a.active {
 #menu > .material-icons {
   font-size: 35px;
   padding: 15px;
-  color: rgb(227, 27, 109);
 }
 
 /* main width */
 main {
   padding-left: 180px;
+}
+
+/* section */
+
+/* make the section full height */
+.full-height {
+  height: 100vh;
+}
+
+.section {
+  padding: 0;
+}
+
+section h3.page-title {
+  font-weight: 200;
+  margin-bottom: 60px;
+  margin-top: 0;
+  padding: 30px 20px;
+  text-transform: uppercase;
 }
 
 /* section Intro */
@@ -101,13 +119,9 @@ section#intro {
 }
 
 .highlight {
-  border-bottom: 2px solid rgb(227, 27, 109);
+  border-bottom: 2px solid;
 }
 
-/* make the section full height */
-.full-height {
-  height: 100vh;
-}
 /* section About */
 
 /* section Education */
