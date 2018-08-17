@@ -15,6 +15,17 @@ document.addEventListener("DOMContentLoaded", function() {
           // block: "start"
         });
       });
+      // smooth scrolling to the top when #oneStepToTop is clicked
+      document
+      .querySelector("#oneStepToTop a")
+      .addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+          // the default value: block: "start", inline: "nearest"
+          // block: "start"
+        });
+      });
     // smooth scrolling to the target when ul#slide-out li a clicked
     // add active class to clicked a link
     // remove it from the other a links
