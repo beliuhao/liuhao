@@ -150,74 +150,7 @@
     crossorigin="anonymous"></script>
   <script src="src/js/pt.min.js"></script>
   <script src="src/js/canvas.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // init the sidenav instance
-      let sideNavEl = document.querySelectorAll(".sidenav");
-      let instanceOfSideNav = M.Sidenav.init(sideNavEl, {});
-      // init the scrollspy instance
-      // let scrollSpyEl = document.querySelectorAll('.scrollspy');
-      // let instancesOfScrollSpy = M.ScrollSpy.init(scrollSpyEl, {
-      //   scrollOffset: 0
-      // });
-      //
-      document.querySelector('#pulseBtn a').addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            block: "start"
-          });
-        });
-      })
-
-    let sidenavLink = document.querySelectorAll("ul#slide-out li a");
-    sidenavLink.forEach(achor => {
-      achor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth',
-          block: "start"
-        });
-        sidenavLink.forEach(a => {
-          a.classList.remove("active");
-        })
-        this.classList.add("active");
-      })
-    })
-
-    (function () {
-      'use strict';
-      window.onscroll = function () {
-        let sections = document.querySelectorAll(".section:not(:nth-child(1))");
-        let sectionsId = [];
-        let sectionsInfo = {};
-        sections.forEach(el => {
-          sectionsId.push(el.id);
-          sectionsInfo[el.id] = {};
-          sectionsInfo[el.id].secTopPos = el.offsetTop - el.clientHeight * 0.5;
-          sectionsInfo[el.id].secBottomPos = el.offsetTop + el.clientHeight * 0.5;
-        });
-        let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-        for (let key in sectionsInfo) {
-          if (scrollPosition >= sectionsInfo[key].secTopPos && scrollPosition <= sectionsInfo[key].secBottomPos) {
-            let currActive = document.querySelector('.active');
-            if(currActive != null) {
-              currActive.classList.remove("active");
-            }
-            document.querySelector('a[href*=' + key + ']').classList.add("active");
-          }
-        }
-        if (scrollPosition <= sectionsInfo['about'].secTopPos * 0.5) {
-          let currActive = document.querySelector('.active');
-            if(currActive != null) {
-              currActive.classList.remove("active");
-            }
-        }
-      };
-    })();
-
-  </script>
+  <script src="src/js/app.js"></script>
 </body>
 
 </html>
