@@ -144,7 +144,7 @@ div.card-image span {
   bottom: -50px;
   height: 50px;
   width: 100%;
-  padding-top: 5px;
+  line-height: 50px;
   padding-left: 25px;
   background: rgba(255,255,255,.8);
 }
@@ -195,5 +195,8 @@ div.card-image:hover span {
   }
   #navContainer i {
     display: none;
+  }
+  div.card-image span {
+    line-height: 25px;
   }
 }
