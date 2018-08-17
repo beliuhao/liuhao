@@ -43,6 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
         this.classList.add("active");
       });
     });
+    // hide or display the #oneStepToTop div based on the current scrollPosition.
+    let oneStepToTop = document.getElementById("oneStepToTop");
+    let aboutSecTopPos = document.getElementById("about").offsetTop;
+    let scrollPosition =
+        document.documentElement.scrollTop || document.body.scrollTop;
+    oneStepToTop.style.display = (scrollPosition <= aboutSecTopPos) ? "none" : "block";
     // dynamically set active class to the ul#slide-out li a
     // when the corresponding section shown in the viewport
     window.onscroll = function() {
@@ -77,6 +83,9 @@ document.addEventListener("DOMContentLoaded", function() {
           currActive.classList.remove("active");
         }
       }
+    // hide or display the #oneStepToTop div based on the current scrollPosition.
+      oneStepToTop.style.display = (scrollPosition <= aboutSecTopPos) ? "none" : "block";
     };
+
   })();
 });
