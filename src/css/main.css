@@ -91,8 +91,7 @@ main {
 
 section h3.page-title {
   font-weight: 200;
-  margin-bottom: 60px;
-  margin-top: 0;
+  margin: 0;
   padding: 30px 20px;
   text-transform: uppercase;
 }
@@ -126,6 +125,34 @@ section#intro {
 /* section About */
 
 /* section Education */
+div.card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+div.card-image img {
+  opacity: 1;
+}
+
+div.card-image:hover img {
+  opacity: 0.6;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div.card-image span {
+  position: absolute;
+  bottom: -50px;
+  height: 50px;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 25px;
+  background: rgba(255,255,255,.8);
+}
+
+div.card-image:hover span {
+  bottom: 0;
+  transition: bottom 0.5s ease-in-out;
+}
 
 /* section Experience */
 
