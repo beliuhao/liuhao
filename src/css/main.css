@@ -1,3 +1,7 @@
+/* html min-width */
+html {
+  min-width: 320px;
+}
 #logo {
   width: 100px;
   height: 100px;
@@ -171,6 +175,32 @@ div.card-image:hover span {
 }
 
 /* section Experience */
+div#expRow .cardHead {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div#expRow .cardHead a {
+  align-self: flex-start;
+}
+
+div#expRow .cardHead span {
+  align-self: center;
+}
+
+div#expRow .corpIntro {
+  padding-top: 10px;
+}
+
+div#expRow h6 {
+  text-transform: uppercase;
+}
+
+div#expRow ul li {
+  list-style: disc inside;
+}
 
 /* section Projects */
 
@@ -234,5 +264,12 @@ section#contact.full-height {
   }
   div.card-image span {
     line-height: 25px;
+  }
+  /* section Experience */
+  div#expRow .cardHead {
+    flex-direction: column;
+  }
+  div#expRow .cardHead a {
+    align-self: center;
   }
 }
