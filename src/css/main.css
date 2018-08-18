@@ -1,41 +1,63 @@
-#logo {
+/* ------ page ------ */
+/* Make sure that padding behaves as expected */
+* {
+  box-sizing: border-box;
+}
+
+/* ------ Navigation Menu ------ */
+
+/* sidenav width */
+ul#slide-out {
+  width: 180px;
+}
+/* sidenav logo */
+ul#slide-out #logo {
   width: 100px;
   height: 100px;
 }
-/* sidenav width */
-#slide-out {
-  width: 180px;
-}
-/* narrow the total width */
-ul.sidenav li > a {
+
+ul#slide-out li > a {
   padding: 0 20px;
 }
-ul.sidenav li > a > i.material-icons {
+ul#slide-out li > a > i.material-icons {
   margin: 0 20px 0 0;
 }
-/* add some padding to the logo and a bottom border to its parent */
-ul.sidenav > li:nth-child(1) {
+/* add some padding to the logo */
+/* add a bottom border to its parent  */
+ul#slide-out > li:nth-child(1) {
   padding: 10px 0;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 /* remove the logo hover effect */
-ul.sidenav > li:nth-child(1) > a:hover {
+ul#slide-out > li:nth-child(1) > a:hover {
   background-color: white;
 }
 
-ul.sidenav li:not(:nth-child(1)) a.active,
-ul.sidenav li:not(:nth-child(1)) a:hover {
+ul#slide-out li:not(:nth-child(1)) a.active,
+ul#slide-out li:not(:nth-child(1)) a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  /* border-left: 5px solid rgb(255, 0, 0); */
 }
 
-ul.sidenav li:not(:nth-child(1)) a.active {
+ul#slide-out li:not(:nth-child(1)) a.active {
   background-color: rgba(0, 0, 0, 0.4);
   border-left: 5px solid rgb(255, 0, 0);
 }
 
-#fixedNav {
+/* menu */
+#menu {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+#menu > .material-icons {
+  font-size: 35px;
+  padding: 15px;
+}
+
+/* ------ fixedNav ------ */
+div#fixedNav {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -50,7 +72,7 @@ ul.sidenav li:not(:nth-child(1)) a.active {
   justify-content: center;
 }
 
-#navContainer {
+div#fixedNav div#navContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -58,34 +80,22 @@ ul.sidenav li:not(:nth-child(1)) a.active {
   padding: 7.5px;
 }
 
-#navContainer div {
+div#fixedNav div#navContainer div {
   height: 25px;
 }
 
-#menu {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-}
-
-#menu > .material-icons {
-  font-size: 35px;
-  padding: 15px;
-}
-
-/* main width */
+/* ------ main ------ */
 main {
   padding-left: 180px;
 }
 
-/* section */
-
+/* --- section --- */
 /* make the section full height */
-.full-height {
+main .full-height {
   height: 100vh;
 }
 
-.section {
+main .section {
   padding: 0;
 }
 
@@ -101,114 +111,115 @@ section#intro {
   padding-top: 85px;
   text-align: center;
 }
-#intro h3, #intro p {
+section#intro h3,
+section#intro p {
   font-family: "Raleway", sans-serif;
 }
 
-#intro h3 {
+section#intro h3 {
   font-size: 45px;
 }
 
-#intro p {
+section#intro p {
   font-size: 25px;
   color: rgb(122, 122, 122);
 }
 
-#intro div#pulseBtn a {
+section#intro div#pulseBtn a {
   z-index: 0;
 }
 
-.highlight {
+section .highlight {
   border-bottom: 2px solid;
 }
 
 /* section About */
 
 /* section Education */
-div#eduRow {
+section#education div#eduRow {
   margin-top: 10px;
   padding-left: 10px;
   border-left: 2px solid #1e88e5;
 }
 
-div#eduRow div.col h6.header {
+section#education div#eduRow div.col h6.header {
   position: relative;
 }
 
-div#eduRow div.col h6.header > span {
+section#education div#eduRow div.col h6.header > span {
   position: absolute;
   left: -34px;
   top: -2px;
 }
 
-div.card-image {
+section#education div.card-image {
   position: relative;
   overflow: hidden;
 }
 
-div.card-image img {
+section#education div.card-image img {
   opacity: 1;
 }
 
-div.card-image:hover img {
+section#education div.card-image:hover img {
   opacity: 0.6;
   transition: opacity 0.5s ease-in-out;
 }
 
-div.card-image span {
+section#education div.card-image span {
   position: absolute;
   bottom: -50px;
   height: 50px;
   width: 100%;
   line-height: 50px;
   padding-left: 25px;
-  background: rgba(255,255,255,.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
-div.card-image:hover span {
+section#education div.card-image:hover span {
   bottom: 0;
   transition: bottom 0.5s ease-in-out;
 }
 
 /* section Experience */
-div#expRow {
+section#experience div#expRow {
   margin-top: 10px;
   padding: 10px 10px 10px 20px;
   border-left: 2px solid #fb8c00;
 }
 
-div#expRow .cardHead {
+section#experience div#expRow .cardHead {
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-div#expRow .cardHead a {
+section#experience div#expRow .cardHead a {
   align-self: flex-start;
 }
 
-div#expRow .cardHead span {
+section#experience div#expRow .cardHead span {
   align-self: center;
 }
 
-div#expRow .corpIntro {
+section#experience div#expRow .corpIntro {
   padding-top: 10px;
 }
 
-div#expRow h6 {
+section#experience div#expRow h6 {
   text-transform: uppercase;
 }
 
-div#expRow ul li {
+section#experience div#expRow ul li {
   list-style: disc inside;
 }
 
-div#expRow div.card-action {
+section#experience div#expRow div.card-action {
   position: relative;
 }
 
-div#expRow div.card-action i {
+section#experience div#expRow div.card-action i {
   position: absolute;
   left: -34px;
   top: 15px;
@@ -217,92 +228,95 @@ div#expRow div.card-action i {
 /* section Projects */
 
 /* section Skills */
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+section#skills div#skillsRow {
+  margin-top: 10px;
+  padding: 10px;
+}
 
 /* Container for skill bars */
-.skillContainer {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-    margin: 10px auto;
+section#skills .skillContainer {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  margin: 10px auto;
 }
 
-.skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px; /* Add some padding */
-    color: white; /* White text color */
+section#skills .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
 }
 
-#skills div.card h5 {
+section#skills #skillsRow h5 {
   text-transform: capitalize;
 }
 
-.skills span.skillHead {
+section#skills .skills span.skillHead {
   align-self: flex-start;
 }
-.skills span.skillTail {
-  /* align-self: flex-end; */
+
+section#skills .html {
+  width: 90%;
+  background-color: #4caf50;
+}
+section#skills .css {
+  width: 80%;
+  background-color: #2196f3;
+}
+section#skills .js {
+  width: 65%;
+  background-color: #f44336;
 }
 
-.html {width: 90%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
 /* section Contact */
 section#contact.full-height {
   height: 750px;
 }
 
-#contactList {
+section#contact #contactList {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 50px auto;
 }
 
-#contactList p a:nth-child(2) {
+section#contact #contactList p a:nth-child(2) {
   margin-left: 10px;
   font-size: 1.2rem;
 }
 
-#contactList p a:nth-child(2):hover {
+section#contact #contactList p a:nth-child(2):hover {
   border-bottom: 1px solid red;
 }
 
-
-
-
-
-
-
-
-
 /* fixedNav only show when sidenav is hidden */
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   #fixedNav {
     display: none;
   }
 }
 
-@media(max-width: 992px) {
+/* main */
+@media (max-width: 992px) {
   main {
     margin-top: 0px;
     padding-left: 0;
   }
 }
 
-@media(max-width: 512px) {
-  #fixedNav{
+@media (max-width: 512px) {
+  /* --- fixedNav --- */
+  div#fixedNav {
     align-items: flex-end;
   }
-  #navContainer {
+  div#fixedNav div#navContainer {
     flex-direction: column;
   }
-  #navContainer div {
+  div#fixedNav div#navContainer div {
     align-self: flex-end;
   }
-  #navContainer i {
+  div#fixedNav div#navContainer i {
     display: none;
   }
   div.card-image span {
