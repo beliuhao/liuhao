@@ -135,14 +135,14 @@ div#eduRow {
   border-left: 2px solid #1e88e5;
 }
 
-div#eduRow div.col h5.header {
+div#eduRow div.col h6.header {
   position: relative;
 }
 
-div#eduRow div.col h5.header > span {
+div#eduRow div.col h6.header > span {
   position: absolute;
   left: -34px;
-  top: 3px;
+  top: -2px;
 }
 
 div.card-image {
@@ -175,6 +175,12 @@ div.card-image:hover span {
 }
 
 /* section Experience */
+div#expRow {
+  margin-top: 10px;
+  padding: 10px 10px 10px 20px;
+  border-left: 2px solid #fb8c00;
+}
+
 div#expRow .cardHead {
   padding-bottom: 10px;
   display: flex;
@@ -200,6 +206,16 @@ div#expRow h6 {
 
 div#expRow ul li {
   list-style: disc inside;
+}
+
+div#expRow div.card-action {
+  position: relative;
+}
+
+div#expRow div.card-action i {
+  position: absolute;
+  left: -34px;
+  top: 15px;
 }
 
 /* section Projects */
