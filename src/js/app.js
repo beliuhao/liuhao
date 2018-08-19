@@ -89,24 +89,30 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     // skill bar animation
-    let skillCss = document.getElementsByClassName("skills css")[0];
-    let skillCssStyle = window.getComputedStyle(skillCss);
-    let widthOfCss = skillCssStyle.getPropertyValue('width');
+    let skills = document.querySelectorAll(".skills");
+    skills.forEach(skill => {
+      let skillStyle = window.getComputedStyle(skill);
+      let widthOfCss = skillStyle.getPropertyValue('width');
+      let keyframes = [];
+      keyframes[0] = {};
+      keyframes[0].width = 0;
+      keyframes[1] = {};
+      keyframes[1].width = widthOfCss;
+      let timeOptions = {
+        // timing options
+        easing: "ease-in-out",
+        duration: 2000,
+        iterations: 1
+      };
+      skill.animate(keyframes, timeOptions);
+    })
 
-    let keyframes = [];
-    keyframes[0] = {};
-    keyframes[0].width = 0;
-    keyframes[1] = {};
-    keyframes[1].width = widthOfCss;
 
-    let timeOptions = {
-      // timing options
-      easing: "ease-in-out",
-      duration: 2000,
-      iterations: 1
-    };
 
-    skillCss.animate(keyframes, timeOptions);
+
+
+
+
 
   })();
 });
