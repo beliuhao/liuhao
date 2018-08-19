@@ -63,7 +63,7 @@ div#fixedNav {
   z-index: 1;
   height: 65px;
   width: 100%;
-  background-color: rgba(244, 244, 244, 0.9);
+  background-color: rgba(244, 244, 244, 0.95);
   color: #555;
   font-size: 1.2rem;
   display: flex;
