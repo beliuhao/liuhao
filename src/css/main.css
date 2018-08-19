@@ -272,48 +272,59 @@ section#skills div.skillContainer .skills span.skillTail {
 section#skills div.skillContainer .html {
   width: 90%;
   background-color: #f674a4;
+  background-image: linear-gradient(top, #f674a4, #e06995);
 }
 section#skills div.skillContainer .css {
   width: 85%;
   background-color: #2196f3;
+  background-image: linear-gradient(top, #2196f3, #1d84d8);
 }
 section#skills div.skillContainer .js {
   width: 75%;
   background-color: #f0bb4b;
+  background-image: linear-gradient(top, #f0bb4b, #d9aa44);
 }
 section#skills div.skillContainer .libs {
   width: 80%;
   background-color: #a1ce5b;
+  background-image: linear-gradient(top, #a1ce5b, #91ba52);
 }
 section#skills div.skillContainer .frameworks {
   width: 65%;
   background-color: #66b3cc;
+  background-image: linear-gradient(top, #66b3cc, #5da3ba)
 }
 
 section#skills div.skillContainer .node {
   width: 65%;
   background-color: #f674a4;
+  background-image: linear-gradient(top, #f674a4, #e06995);
 }
 section#skills div.skillContainer .sql {
   width: 60%;
   background-color: #2196f3;
+  background-image: linear-gradient(top, #2196f3, #1d84d8);
 }
 section#skills div.skillContainer .database {
   width: 70%;
   background-color: #a1ce5b;
+  background-image: linear-gradient(top, #a1ce5b, #91ba52);
 }
 
 section#skills div.skillContainer .chrome {
   width: 75%;
   background-color: #f674a4;
+  background-image: linear-gradient(top, #f674a4, #e06995);
 }
 section#skills div.skillContainer .vscode {
   width: 80%;
   background-color: #f0bb4b;
+  background-image: linear-gradient(top, #f0bb4b, #d9aa44);
 }
 section#skills div.skillContainer .git {
   width: 70%;
   background-color: #66b3cc;
+  background-image: linear-gradient(top, #66b3cc, #5da3ba)
 }
 
 /* section Contact */
