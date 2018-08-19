@@ -85,7 +85,19 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     // hide or display the #oneStepToTop div based on the current scrollPosition.
       oneStepToTop.style.display = (scrollPosition <= aboutSecTopPos) ? "none" : "block";
+
     };
+
+    // skill bar animation
+    document.getElementsByClassName("skills css")[0].animate([
+      // keyframes
+      { width: '0' },
+      { width: '85%' }
+    ], {
+      // timing options
+      duration: 3000,
+      iterations: 1
+    });
 
   })();
 });
