@@ -328,6 +328,10 @@ section#contact #contactList {
   margin: 50px auto;
 }
 
+section#contact #contactList p a:nth-child(1) {
+  z-index: 0;
+}
+
 section#contact #contactList p a:nth-child(2) {
   margin-left: 10px;
   font-size: 1.2rem;
