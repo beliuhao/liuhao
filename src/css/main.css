@@ -370,10 +370,19 @@ section#contact #contactList p a:nth-child(2):hover {
     line-height: 25px;
   }
   /* section Experience */
-  div#expRow .cardHead {
+  section#experience div#expRow .cardHead {
     flex-direction: column;
   }
-  div#expRow .cardHead a {
+  section#experience div#expRow .cardHead a {
     align-self: center;
+  }
+}
+
+@media (max-width: 315px) {
+  section#contact #contactList {
+    align-items: center;
+  }
+  section#contact #contactList p a:nth-child(2) {
+    display: none;
   }
 }
