@@ -273,6 +273,7 @@ section#skills div.skillContainer .html {
   width: 90%;
   background-color: #f674a4;
   background-image: linear-gradient(top, #f674a4, #e06995);
+  animation: html 2s ease-out;
 }
 section#skills div.skillContainer .css {
   width: 85%;
@@ -325,6 +326,11 @@ section#skills div.skillContainer .git {
   width: 70%;
   background-color: #66b3cc;
   background-image: linear-gradient(top, #66b3cc, #5da3ba)
+}
+
+@keyframes html {
+  0%  { width:0px;}
+  100%{ width:90%;}
 }
 
 /* section Contact */
