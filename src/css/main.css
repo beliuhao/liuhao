@@ -233,44 +233,87 @@ section#skills div#skillsRow {
   padding: 10px;
 }
 
+section#skills div#skillsRow h5 {
+  text-transform: capitalize;
+}
+
 /* Container for skill bars */
-section#skills .skillContainer {
+section#skills div.skillContainer {
   width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  background-color: #e9e5e2; /* Grey background */
   margin: 10px auto;
+  padding:1px 2px;
   border-radius: 20px;
   box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
 }
 
-section#skills .skills {
+section#skills div.skillContainer .skills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px; /* Add some padding */
   color: white; /* White text color */
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+  height: 25px;
+  line-height: 25px;
+  font-size: 0.8rem;
+  overflow: hidden;
 }
 
-section#skills #skillsRow h5 {
-  text-transform: capitalize;
-}
-
-section#skills .skills span.skillHead {
+section#skills div.skillContainer .skills span.skillHead {
   align-self: flex-start;
+  padding-left: 10px;
 }
 
-section#skills .html {
-  width: 90%;
-  background-color: #4caf50;
+section#skills div.skillContainer .skills span.skillTail {
+  padding-right: 10px;
 }
-section#skills .css {
-  width: 80%;
+
+section#skills div.skillContainer .html {
+  width: 90%;
+  background-color: #f674a4;
+}
+section#skills div.skillContainer .css {
+  width: 85%;
   background-color: #2196f3;
 }
-section#skills .js {
+section#skills div.skillContainer .js {
+  width: 75%;
+  background-color: #f0bb4b;
+}
+section#skills div.skillContainer .libs {
+  width: 80%;
+  background-color: #a1ce5b;
+}
+section#skills div.skillContainer .frameworks {
   width: 65%;
-  background-color: #f44336;
+  background-color: #66b3cc;
+}
+
+section#skills div.skillContainer .node {
+  width: 65%;
+  background-color: #f674a4;
+}
+section#skills div.skillContainer .sql {
+  width: 60%;
+  background-color: #2196f3;
+}
+section#skills div.skillContainer .database {
+  width: 70%;
+  background-color: #a1ce5b;
+}
+
+section#skills div.skillContainer .chrome {
+  width: 75%;
+  background-color: #f674a4;
+}
+section#skills div.skillContainer .vscode {
+  width: 80%;
+  background-color: #f0bb4b;
+}
+section#skills div.skillContainer .git {
+  width: 70%;
+  background-color: #66b3cc;
 }
 
 /* section Contact */
