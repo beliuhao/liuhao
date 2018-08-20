@@ -438,3 +438,15 @@ section#contact #contactList p a:nth-child(2):hover {
     display: none;
   }
 }
+
+/* section education */
+@media(min-width: 1368px) {
+  section#education div.card {
+    display: flex;
+    flex-direction: row;
+  }
+  section#education div.card-image {
+    align-self: center;
+    max-width: 50%;
+  }
+}
