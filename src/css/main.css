@@ -450,3 +450,27 @@ section#contact #contactList p a:nth-child(2):hover {
     max-width: 50%;
   }
 }
+
+/* section about */
+@media(max-width: 635px) {
+  section#about div#aboutRow {
+    flex-direction: column;
+  }
+
+  section#about div#aboutRow div {
+    align-self: center;
+    text-align: center;
+  }
+
+  section#about div#aboutRow div#imgDevDes {
+    max-width: 100%;
+    order: 1;
+  }
+
+  section#about div#aboutRow div#developer {
+    order: 2
+  }
+  section#about div#aboutRow div#designer {
+    order: 3
+  }
+}
