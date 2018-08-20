@@ -204,6 +204,7 @@ section#experience div#expRow .cardHead a {
 
 section#experience div#expRow .cardHead span {
   align-self: center;
+  text-align: center;
 }
 
 section#experience div#expRow .corpIntro {
