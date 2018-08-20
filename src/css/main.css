@@ -139,27 +139,25 @@ section#about div#aboutRow {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
+
 section#about div#aboutRow div{
   align-self: center;
 }
 
 section#about div#aboutRow div#imgDevDes{
   text-align: center;
-  max-width: 45%;
+  max-width: 65%;
 }
 
-section#about div#aboutRow div#developer,
-section#about div#aboutRow div#designer
+section#about div#aboutRow div#contentDevDes div#developer,
+section#about div#aboutRow div#contentDevDes div#designer
 {
-  /* min-width: 20%; */
   text-align: left;
 }
 
-
 section#about img.responsive-img {
-  max-width: 60%;
+  max-width: 65%;
 }
 
 
