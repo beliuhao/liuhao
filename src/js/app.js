@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
       .addEventListener("click", function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
+          behavior: "smooth",
           // the default value: block: "start", inline: "nearest"
-          // block: "start"
+          block: "start"
         });
       });
       // smooth scrolling to the top when #oneStepToTop is clicked
