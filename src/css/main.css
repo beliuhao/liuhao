@@ -181,13 +181,9 @@ section#experience div#expRow .cardHead {
   justify-content: space-between;
 }
 
-section#experience div#expRow .cardHead a {
-  align-self: flex-start;
-}
-
-section#experience div#expRow .cardHead span {
+section#experience div#expRow .cardHead div {
   align-self: center;
-  text-align: center;
+  text-align: right;
 }
 
 section#experience div#expRow .corpIntro {
@@ -441,6 +437,10 @@ section#contact #contactList p a:nth-child(2):hover {
   }
   section#experience div#expRow .cardHead a {
     align-self: center;
+  }
+  section#experience div#expRow .cardHead div {
+    align-self: center;
+    text-align: center;
   }
 }
 
