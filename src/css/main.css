@@ -117,12 +117,8 @@ section#intro p {
   font-family: "Raleway", sans-serif;
 }
 
-section#intro h3 {
-  font-size: 45px;
-}
-
 section#intro p {
-  font-size: 25px;
+  font-size: 1.8rem;
   color: rgb(122, 122, 122);
 }
 
@@ -443,6 +439,15 @@ section#contact #contactList p a:nth-child(2):hover {
   div.card-image span {
     line-height: 25px;
   }
+  /* section Intro */
+  section#intro h3 {
+    font-size: 1.5rem;
+  }
+
+  section#intro p {
+    font-size: 1.2rem;
+  }
+
   /* section Experience */
   section#experience div#expRow .cardHead {
     flex-direction: column;
@@ -450,6 +455,19 @@ section#contact #contactList p a:nth-child(2):hover {
   section#experience div#expRow .cardHead a {
     align-self: center;
   }
+}
+
+@media(max-height: 452px) {
+
+  section#intro h3 {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+
+  section#intro p {
+    display: none;
+  }
+
 }
 
 @media (max-width: 378px) {
