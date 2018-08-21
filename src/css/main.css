@@ -138,7 +138,7 @@ section .highlight {
 
 /* section About */
 section#about div.aboutRow {
-  margin: 10px auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -149,37 +149,18 @@ section#about div.aboutRow div{
 }
 
 section#about div.aboutRow div.imgAbout{
-  max-width: 65%;
+  max-width: 60%;
 }
 
 section#about div.aboutRow div.contentAbout {
-  text-align: left;
-  padding-left: 20px;
-  border-left: 2px red solid;
-  min-width: 35%;
-}
-
-section#about div.aboutRow div.contentAbout#selfAssess {
-  min-width: 45%;
-}
-
-section#about div.aboutRow div.contentAbout ul li{
-  list-style: disc inside;
-}
-
-section#about div.aboutRow div.imgAbout#devdesImg {
-  text-align: left;
-}
-
-section#about div.aboutRow div.imgAbout#assessImg{
   text-align: right;
+  border-left: 2px red solid;
+  min-width: 50%;
 }
 
-/* section#about div.aboutRow div.contentAbout div#developer,
-section#about div.aboutRow div.contentAbout div#designer
-{
-  text-align: left;
-} */
+section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1){
+  display: none;
+}
 
 section#about img.responsive-img {
   max-width: 65%;
@@ -498,33 +479,38 @@ section#contact #contactList p a:nth-child(2):hover {
 }
 
 /* section about */
-@media(max-width: 635px) {
-
-  section#about div.aboutRow {
-    padding: 10px 10px 10px 20px;
-    border-left: 2px solid red;
-  }
+@media(max-width: 738px) {
 
   section#about div.aboutRow {
     flex-direction: column;
+    padding: 10px;
+    border-left: 2px solid red;
   }
 
   section#about div.aboutRow div.contentAbout {
     border-left: none;
+    text-align: left;
+    padding-left: 10%;
   }
 
-  section#about div.aboutRow div.imgAbout#devdesImg,
-  section#about div.aboutRow div.imgAbout#assessImg
-  {
-    text-align: center;
+  section#about div.aboutRow div.contentAbout ul li{
+    list-style: disc inside;
+  }
+
+  section#about div.aboutRow div.contentAbout#selfAssess > div:nth-child(1) ul li{
+    list-style: none;
+  }
+
+  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1){
+    display: inline;
+  }
+
+  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(2){
+    display: none;
   }
 
   section#about div.aboutRow div.imgAbout {
+    text-align: center;
     max-width: 100%;
-    order: 1;
-  }
-
-  section#about div.aboutRow div.contentAbout {
-    order: 2
   }
 }
