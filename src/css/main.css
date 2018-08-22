@@ -211,9 +211,22 @@ section#experience div#expRow div.card-action i {
 }
 
 /* section Projects */
-section#projects div#carousel div.carousel {
-  height: 600px !important;
-  margin: 25px auto;
+
+section#projects div.carousel {
+  min-height: 700px;
+}
+
+section#projects div.carousel div.carousel-item h2{
+  font-weight: lighter;
+}
+
+section#projects div.carousel div.carousel-item div.project {
+  width: 85%;
+  height: 550px;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
 }
 
 /* section Skills */

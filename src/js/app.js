@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // pause the carouselInterval when mouse moved in
     document
-    .querySelector("#carousel .carousel")
+    .querySelector(".carousel")
     .addEventListener("mouseover", function() {
       clearInterval(carouselInterval);
     });
 
     document
-    .querySelector("#carousel .carousel")
+    .querySelector(".carousel")
     .addEventListener("mouseout", function() {
       carouselInterval = setInterval(moveCarousel, 4500);
     })
