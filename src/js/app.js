@@ -2,17 +2,24 @@ document.addEventListener("DOMContentLoaded", function() {
   (function() {
     "use strict";
     // init the sidenav instance
-    let sideNavEl = document.querySelectorAll(".sidenav");
-    let instanceOfSideNav = M.Sidenav.init(sideNavEl, {});
+    let sideNavEls = document.querySelectorAll(".sidenav");
+    let instanceOfSideNav = M.Sidenav.init(sideNavEls, {});
     // init the carousel instance
-    let carouselEl = document.querySelectorAll('.carousel');
-
-    var instance = M.Carousel.init(carouselEl,
+    let carouselEls = document.querySelectorAll('.carousel');
+    let instanceOfCarousel = M.Carousel.init(carouselEls,
       {
         fullWidth: true,
         indicators: true
       }
     );
+
+    // slide the carousel automaticallys
+    const moveCarousel = function() {
+      let currentCarousel = M.Carousel.getInstance(carouselEls[0]);
+      currentCarousel.next();
+    }
+    let carouselInterval = setInterval(moveCarousel, 4500);
+
 
 
     // smooth scrolling to the target when #pulseBtn a clicked
