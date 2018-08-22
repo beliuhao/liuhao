@@ -209,6 +209,10 @@ section#experience div#expRow div.card-action i {
 }
 
 /* section Projects */
+section#projects div#carousel div.carousel {
+  height: 600px !important;
+  margin: 25px auto;
+}
 
 /* section Skills */
 section#skills div#skillsRow {

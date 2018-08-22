@@ -4,6 +4,17 @@ document.addEventListener("DOMContentLoaded", function() {
     // init the sidenav instance
     let sideNavEl = document.querySelectorAll(".sidenav");
     let instanceOfSideNav = M.Sidenav.init(sideNavEl, {});
+    // init the carousel instance
+    let carouselEl = document.querySelectorAll('.carousel');
+
+    var instance = M.Carousel.init(carouselEl,
+      {
+        fullWidth: true,
+        indicators: true
+      }
+    );
+
+
     // smooth scrolling to the target when #pulseBtn a clicked
     document
       .querySelector("#pulseBtn a")
