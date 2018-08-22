@@ -111,6 +111,8 @@ document.addEventListener("DOMContentLoaded", function() {
       everAnimatedOnce = true;
     }
 
+
+    let prevScrollpos = window.pageYOffset;
     // dynamically set active class to the ul#slide-out li a
     // when the corresponding section shown in the viewport
     window.onscroll = function() {
@@ -156,6 +158,16 @@ document.addEventListener("DOMContentLoaded", function() {
         skillAnimate();
         everAnimatedOnce = true;
       }
+
+      // hide fixedNav on scroll down and show it on scroll up
+      let currentScrollPos = window.pageYOffset;
+      let fixedNav = document.getElementById("fixedNav");
+      if (prevScrollpos > currentScrollPos) {
+        fixedNav.style.top = "0";
+      } else {
+        fixedNav.style.top = "-65px";
+      }
+      prevScrollpos = currentScrollPos;
 
     };
 

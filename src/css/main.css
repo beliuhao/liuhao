@@ -76,6 +76,7 @@ div#fixedNav {
   align-items: center;
   justify-content: center;
   padding-left: 180px;
+  transition: top 0.3s;
 }
 
 div#fixedNav div#navContainer {
