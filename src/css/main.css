@@ -54,6 +54,7 @@ ul#slide-out li:not(:nth-child(1)) a.active {
   position: fixed;
   top: 0;
   z-index: 2;
+  transition: top 0.3s;
 }
 
 #menu > .material-icons {

@@ -162,10 +162,13 @@ document.addEventListener("DOMContentLoaded", function() {
       // hide fixedNav on scroll down and show it on scroll up
       let currentScrollPos = window.pageYOffset;
       let fixedNav = document.getElementById("fixedNav");
+      let menu = document.getElementById("menu");
       if (prevScrollpos > currentScrollPos) {
         fixedNav.style.top = "0";
+        menu.style.top = "0";
       } else {
         fixedNav.style.top = "-65px";
+        menu.style.top = "-65px";
       }
       prevScrollpos = currentScrollPos;
 
