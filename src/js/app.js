@@ -20,6 +20,19 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     let carouselInterval = setInterval(moveCarousel, 4500);
 
+    // pause the carouselInterval when mouse moved in
+    document
+    .querySelector("#carousel .carousel")
+    .addEventListener("mouseover", function() {
+      clearInterval(carouselInterval);
+    });
+
+    document
+    .querySelector("#carousel .carousel")
+    .addEventListener("mouseout", function() {
+      carouselInterval = setInterval(moveCarousel, 4500);
+    })
+
 
 
     // smooth scrolling to the target when #pulseBtn a clicked
