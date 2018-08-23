@@ -735,3 +735,17 @@ section#contact #contactList p a:nth-child(2):hover {
     font-size: 1.5em;
   }
 }
+
+@media(max-width: 365px) {
+  section#skills div.skillContainer .skills span.skillTail {
+    display: none;
+  }
+}
+
+@media(max-width: 320px) {
+  section#projects div.carousel div.carousel-item
+  div.project div.proContainer div.projectIntro
+  div.outline div {
+    display: none;
+  }
+}
