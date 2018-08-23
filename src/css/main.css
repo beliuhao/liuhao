@@ -146,11 +146,11 @@ section#about div.aboutRow {
   justify-content: space-around;
 }
 
-section#about div.aboutRow div{
+section#about div.aboutRow div {
   align-self: center;
 }
 
-section#about div.aboutRow div.imgAbout{
+section#about div.aboutRow div.imgAbout {
   max-width: 60%;
 }
 
@@ -160,14 +160,13 @@ section#about div.aboutRow div.contentAbout {
   min-width: 50%;
 }
 
-section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1){
+section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1) {
   display: none;
 }
 
 section#about img.responsive-img {
   max-width: 65%;
 }
-
 
 /* section Experience */
 section#experience div#expRow {
@@ -216,8 +215,7 @@ section#projects div.carousel {
   min-height: 800px;
 }
 
-section#projects div.carousel div.carousel-item
-div.project {
+section#projects div.carousel div.carousel-item div.project {
   max-width: 75%;
   height: 85%;
   margin: 40px auto;
@@ -227,8 +225,7 @@ div.project {
   justify-content: center;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer {
+section#projects div.carousel div.carousel-item div.project div.proContainer {
   align-self: center;
   max-width: 90%;
   border-top: 4px solid rgba(83, 219, 112, 0.9);
@@ -239,8 +236,12 @@ div.project div.proContainer {
   overflow: hidden;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro {
   position: absolute;
   top: -100%;
   width: 100%;
@@ -248,66 +249,110 @@ div.project div.proContainer div.projectIntro {
   margin-bottom: 5px;
   /* border: 2px solid yellow; */
   background: rgba(255, 255, 255, 0.8);
-  background: linear-gradient(rgba(83, 219, 112, 0.9), rgba(142, 100, 221, 0.9));
+  background: linear-gradient(
+    rgba(83, 219, 112, 0.9),
+    rgba(142, 100, 221, 0.9)
+  );
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer:hover div.projectIntro {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer:hover
+  div.projectIntro {
   top: 0;
   transition: top 0.5s ease-in-out;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.outline {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.outline {
   height: 60%;
   width: 80%;
   margin: 0 auto;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.outline h5 {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.outline
+  h5 {
   color: black;
   margin: 5% auto;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.outline div {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.outline
+  div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.outline div p {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.outline
+  div
+  p {
   color: black;
   font-size: 1.2rem;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.outline div ul.tags {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.outline
+  div
+  ul.tags {
   align-self: center;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.outline div ul.tags li {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.outline
+  div
+  ul.tags
+  li {
   display: inline-block;
   padding: 0.3em 0.8em;
-  margin: 1.0em;
+  margin: 1em;
   background-color: #323232;
   color: #fff;
   font-size: 1.2em;
-  box-shadow: 1px 1px 0 rgba(0,0,0,.25);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.sourceCode {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.sourceCode {
   height: 40%;
   /* border-top: 2px solid green; */
   position: relative;
@@ -316,17 +361,27 @@ div.sourceCode {
   justify-content: space-evenly;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.sourceCode a {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.sourceCode
+  a {
   color: white;
   /* padding-bottom: 2%; */
   align-self: center;
 }
 
-section#projects div.carousel div.carousel-item
-div.project div.proContainer div.projectIntro
-div.sourceCode a:hover {
+section#projects
+  div.carousel
+  div.carousel-item
+  div.project
+  div.proContainer
+  div.projectIntro
+  div.sourceCode
+  a:hover {
   color: black;
 }
 
@@ -346,7 +401,7 @@ section#skills div.skillContainer {
   width: 100%; /* Full width */
   background-color: #e9e5e2; /* Grey background */
   margin: 10px auto;
-  padding:1px 2px;
+  padding: 1px 2px;
   border-radius: 20px;
   box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
 }
@@ -397,7 +452,7 @@ section#skills div.skillContainer .libs {
 section#skills div.skillContainer .frameworks {
   width: 65%;
   background-color: #66b3cc;
-  background-image: linear-gradient(top, #66b3cc, #5da3ba)
+  background-image: linear-gradient(top, #66b3cc, #5da3ba);
 }
 
 section#skills div.skillContainer .node {
@@ -429,7 +484,7 @@ section#skills div.skillContainer .vscode {
 section#skills div.skillContainer .git {
   width: 70%;
   background-color: #66b3cc;
-  background-image: linear-gradient(top, #66b3cc, #5da3ba)
+  background-image: linear-gradient(top, #66b3cc, #5da3ba);
 }
 
 /* @keyframes html {
@@ -565,8 +620,7 @@ section#contact #contactList p a:nth-child(2):hover {
   }
 }
 
-@media(max-height: 452px) {
-
+@media (max-height: 452px) {
   section#intro h3 {
     font-size: 1.8rem;
     margin-bottom: 35px;
@@ -575,7 +629,6 @@ section#contact #contactList p a:nth-child(2):hover {
   section#intro p {
     display: none;
   }
-
 }
 
 @media (max-width: 378px) {
@@ -588,7 +641,7 @@ section#contact #contactList p a:nth-child(2):hover {
 }
 
 /* section education */
-@media(min-width: 1368px) {
+@media (min-width: 1368px) {
   section#education div.card {
     display: flex;
     flex-direction: row;
@@ -600,8 +653,7 @@ section#contact #contactList p a:nth-child(2):hover {
 }
 
 /* section about */
-@media(max-width: 738px) {
-
+@media (max-width: 738px) {
   section#about div.aboutRow {
     flex-direction: column;
     padding: 10px;
@@ -614,19 +666,24 @@ section#contact #contactList p a:nth-child(2):hover {
     padding-left: 10%;
   }
 
-  section#about div.aboutRow div.contentAbout ul li{
+  section#about div.aboutRow div.contentAbout ul li {
     list-style: disc inside;
   }
 
-  section#about div.aboutRow div.contentAbout#selfAssess > div:nth-child(1) ul li{
+  section#about
+    div.aboutRow
+    div.contentAbout#selfAssess
+    > div:nth-child(1)
+    ul
+    li {
     list-style: none;
   }
 
-  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1){
+  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1) {
     display: inline;
   }
 
-  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(2){
+  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(2) {
     display: none;
   }
 
@@ -636,25 +693,25 @@ section#contact #contactList p a:nth-child(2):hover {
   }
 }
 
-@media(max-width: 1665px) {
+@media (max-width: 1665px) {
   section#projects div.carousel div.carousel-item div.project div.proContainer {
     max-width: 100%;
   }
 }
 
-@media(max-width: 1258px) {
+@media (max-width: 1258px) {
   section#projects div.carousel {
     min-height: 600px;
   }
 }
 
-@media(max-width: 915px) {
+@media (max-width: 915px) {
   section#projects div.carousel {
     min-height: 550px !important;
   }
 }
 
-@media(max-width: 750px) {
+@media (max-width: 750px) {
   section#projects div.carousel div.carousel-item div.project {
     max-width: 100%;
   }
@@ -666,7 +723,7 @@ section#contact #contactList p a:nth-child(2):hover {
   }
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   section#projects div.carousel div.carousel-item div.project div.proContainer {
     max-width: 80%;
   }
@@ -675,13 +732,13 @@ section#contact #contactList p a:nth-child(2):hover {
   }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   section#projects div.carousel {
     min-height: 400px !important;
   }
 }
 
-@media(max-width: 550px) {
+@media (max-width: 550px) {
   section#projects div.carousel div.carousel-item div.project {
     margin: 15px auto;
   }
@@ -693,7 +750,7 @@ section#contact #contactList p a:nth-child(2):hover {
   }
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   section#projects div.carousel div.carousel-item div.project div.proContainer {
     max-width: 80%;
   }
@@ -702,50 +759,81 @@ section#contact #contactList p a:nth-child(2):hover {
   }
 }
 
-@media(max-width: 1168px) {
-  section#projects div.carousel div.carousel-item
-  div.project div.proContainer div.projectIntro
-  div.outline div p {
+@media (max-width: 1168px) {
+  section#projects
+    div.carousel
+    div.carousel-item
+    div.project
+    div.proContainer
+    div.projectIntro
+    div.outline
+    div
+    p {
     display: none;
   }
 }
 
-@media(max-width: 765px) {
-  section#projects div.carousel div.carousel-item
-  div.project div.proContainer div.projectIntro
-  div.outline div ul.tags li {
+@media (max-width: 765px) {
+  section#projects
+    div.carousel
+    div.carousel-item
+    div.project
+    div.proContainer
+    div.projectIntro
+    div.outline
+    div
+    ul.tags
+    li {
     padding: 0.3em 0.5em;
     margin: 0.6em;
-    font-size: 1.0em;
+    font-size: 1em;
   }
 }
 
-@media(max-width: 550px) {
-  section#projects div.carousel div.carousel-item
-  div.project div.proContainer div.projectIntro
-  div.outline div ul.tags li {
+@media (max-width: 550px) {
+  section#projects
+    div.carousel
+    div.carousel-item
+    div.project
+    div.proContainer
+    div.projectIntro
+    div.outline
+    div
+    ul.tags
+    li {
     padding: 0.2em 0.4em;
     margin: 0.4em;
     font-size: 0.8em;
   }
 
-  section#projects div.carousel div.carousel-item
-  div.project div.proContainer div.projectIntro
-  div.sourceCode a i {
+  section#projects
+    div.carousel
+    div.carousel-item
+    div.project
+    div.proContainer
+    div.projectIntro
+    div.sourceCode
+    a
+    i {
     font-size: 1.5em;
   }
 }
 
-@media(max-width: 365px) {
+@media (max-width: 365px) {
   section#skills div.skillContainer .skills span.skillTail {
     display: none;
   }
 }
 
-@media(max-width: 320px) {
-  section#projects div.carousel div.carousel-item
-  div.project div.proContainer div.projectIntro
-  div.outline div {
+@media (max-width: 320px) {
+  section#projects
+    div.carousel
+    div.carousel-item
+    div.project
+    div.proContainer
+    div.projectIntro
+    div.outline
+    div {
     display: none;
   }
 }

@@ -5,15 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     let sideNavEls = document.querySelectorAll(".sidenav");
     let instanceOfSideNav = M.Sidenav.init(sideNavEls, {});
     // init the carousel instance
-    let carouselEls = document.querySelectorAll('.carousel');
-    let instanceOfCarousel = M.Carousel.init(carouselEls,
-      {
-        fullWidth: true,
-        indicators: true
-      }
-    );
+    let carouselEls = document.querySelectorAll(".carousel");
+    let instanceOfCarousel = M.Carousel.init(carouselEls, {
+      fullWidth: true,
+      indicators: true
+    });
     // init the tooltip instance
-    let tooltipEls = document.querySelectorAll('.tooltipped');
+    let tooltipEls = document.querySelectorAll(".tooltipped");
     var instanceOfTooltip = M.Tooltip.init(tooltipEls, {});
 
     // slide the carousel automaticallys
@@ -25,18 +23,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // pause the carouselInterval when mouse moved in
     document
-    .querySelector(".carousel")
-    .addEventListener("mouseover", function() {
-      clearInterval(carouselInterval);
-    });
+      .querySelector(".carousel")
+      .addEventListener("mouseover", function() {
+        clearInterval(carouselInterval);
+      });
 
     document
-    .querySelector(".carousel")
-    .addEventListener("mouseout", function() {
-      carouselInterval = setInterval(moveCarousel, 4500);
-    })
-
-
+      .querySelector(".carousel")
+      .addEventListener("mouseout", function() {
+        carouselInterval = setInterval(moveCarousel, 4500);
+      });
 
     // smooth scrolling to the target when #pulseBtn a clicked
     document
@@ -49,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
           block: "start"
         });
       });
-      // smooth scrolling to the top when #oneStepToTop is clicked
-      document
+    // smooth scrolling to the top when #oneStepToTop is clicked
+    document
       .querySelector("#oneStepToTop a")
       .addEventListener("click", function(e) {
         e.preventDefault();
@@ -81,8 +77,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let oneStepToTop = document.getElementById("oneStepToTop");
     let aboutSecTopPos = document.getElementById("about").offsetTop;
     let scrollPosition =
-        document.documentElement.scrollTop || document.body.scrollTop;
-    oneStepToTop.style.display = (scrollPosition <= aboutSecTopPos) ? "none" : "block";
+      document.documentElement.scrollTop || document.body.scrollTop;
+    oneStepToTop.style.display =
+      scrollPosition <= aboutSecTopPos ? "none" : "block";
 
     // skill bar animation
     let everAnimatedOnce = false;
@@ -90,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let skills = document.querySelectorAll(".skills");
       skills.forEach(skill => {
         let skillStyle = window.getComputedStyle(skill);
-        let widthOfCss = skillStyle.getPropertyValue('width');
+        let widthOfCss = skillStyle.getPropertyValue("width");
         let keyframes = [];
         keyframes[0] = {};
         keyframes[0].width = 0;
@@ -103,17 +100,18 @@ document.addEventListener("DOMContentLoaded", function() {
           iterations: 1
         };
         skill.animate(keyframes, timeOptions);
-      })
+      });
     };
 
     if (
-      scrollPosition >= (document.getElementById("skills").offsetTop + document.getElementById("skills").clientHeight * 0.2) &&
+      scrollPosition >=
+        document.getElementById("skills").offsetTop +
+          document.getElementById("skills").clientHeight * 0.2 &&
       !everAnimatedOnce
     ) {
       skillAnimate();
       everAnimatedOnce = true;
     }
-
 
     let prevScrollpos = window.pageYOffset;
     // dynamically set active class to the ul#slide-out li a
@@ -152,11 +150,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }
       // hide or display the #oneStepToTop div based on the current scrollPosition.
-      oneStepToTop.style.display = (scrollPosition <= aboutSecTopPos) ? "none" : "block";
+      oneStepToTop.style.display =
+        scrollPosition <= aboutSecTopPos ? "none" : "block";
 
       // animate the skill bar when scrolling into the skills section area.
       if (
-        scrollPosition >= (sectionsInfo["skills"].secTopPos) && !everAnimatedOnce
+        scrollPosition >= sectionsInfo["skills"].secTopPos &&
+        !everAnimatedOnce
       ) {
         skillAnimate();
         everAnimatedOnce = true;
@@ -174,11 +174,6 @@ document.addEventListener("DOMContentLoaded", function() {
         menu.style.top = "-65px";
       }
       prevScrollpos = currentScrollPos;
-
     };
-
-
-
-
   })();
 });
