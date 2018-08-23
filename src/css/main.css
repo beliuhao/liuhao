@@ -338,6 +338,7 @@ section#skills div#skillsRow {
 
 section#skills div#skillsRow h5 {
   text-transform: uppercase;
+  font-weight: lighter;
 }
 
 /* Container for skill bars */
