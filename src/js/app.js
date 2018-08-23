@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
         indicators: true
       }
     );
+    // init the tooltip instance
+    let tooltipEls = document.querySelectorAll('.tooltipped');
+    var instanceOfTooltip = M.Tooltip.init(tooltipEls, {});
 
     // slide the carousel automaticallys
     const moveCarousel = function() {
