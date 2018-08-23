@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const moveCarousel = function() {
       let currentCarousel = M.Carousel.getInstance(carouselEls[0]);
       currentCarousel.next();
-    }
+    };
     let carouselInterval = setInterval(moveCarousel, 4500);
 
     // pause the carouselInterval when mouse moved in

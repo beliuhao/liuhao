@@ -213,19 +213,22 @@ section#experience div#expRow div.card-action i {
 /* section Projects */
 
 section#projects div.carousel {
-  min-height: 700px;
-}
-
-section#projects div.carousel div.carousel-item h2{
-  font-weight: lighter;
+  min-height: 800px;
 }
 
 section#projects div.carousel div.carousel-item div.project {
-  width: 85%;
-  height: 550px;
-  margin: 15px auto;
-  padding: 10px;
-  background-color: white;
+  max-width: 75%;
+  height: 85%;
+  margin: 40px auto;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#projects div.carousel div.carousel-item div.project img.projectImg {
+  align-self: center;
+  max-width: 90%;
   border: 1px solid white;
 }
 
@@ -531,5 +534,71 @@ section#contact #contactList p a:nth-child(2):hover {
   section#about div.aboutRow div.imgAbout {
     text-align: center;
     max-width: 100%;
+  }
+}
+
+@media(max-width: 1665px) {
+  section#projects div.carousel div.carousel-item div.project img.projectImg {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 1258px) {
+  section#projects div.carousel {
+    min-height: 600px;
+  }
+}
+
+@media(max-width: 915px) {
+  section#projects div.carousel {
+    min-height: 550px !important;
+  }
+}
+
+@media(max-width: 750px) {
+  section#projects div.carousel div.carousel-item div.project {
+    max-width: 100%;
+  }
+  section#projects div.carousel div.carousel-item div.project img.projectImg {
+    max-width: 75%;
+  }
+  section#projects div.carousel {
+    min-height: 500px !important;
+  }
+}
+
+@media(max-width: 650px) {
+  section#projects div.carousel div.carousel-item div.project img.projectImg {
+    max-width: 80%;
+  }
+  section#projects div.carousel {
+    min-height: 450px !important;
+  }
+}
+
+@media(max-width: 600px) {
+  section#projects div.carousel {
+    min-height: 400px !important;
+  }
+}
+
+@media(max-width: 550px) {
+  section#projects div.carousel div.carousel-item div.project {
+    margin: 15px auto;
+  }
+  section#projects div.carousel div.carousel-item div.project img.projectImg {
+    max-width: 75%;
+  }
+  section#projects div.carousel {
+    min-height: 380px !important;
+  }
+}
+
+@media(max-width: 450px) {
+  section#projects div.carousel div.carousel-item div.project img.projectImg {
+    max-width: 80%;
+  }
+  section#projects div.carousel {
+    min-height: 360px !important;
   }
 }
