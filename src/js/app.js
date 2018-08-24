@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // smooth scrolling to the target when ul#slide-out li a clicked
     // add active class to clicked a link
     // remove it from the other a links
-    let sidenavLink = document.querySelectorAll("ul#slide-out li a");
+    let sidenavLink = document.querySelectorAll("ul#slide-out li:not(#resume):not(#langSwitch) a");
     sidenavLink.forEach(achor => {
       achor.addEventListener("click", function(e) {
         e.preventDefault();
