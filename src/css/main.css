@@ -24,7 +24,7 @@ ul#slide-out li a span {
   text-transform: uppercase;
 }
 
-ul#slide-out li > a > i.material-icons {
+ul#slide-out li > a > i {
   margin: 0 20px 0 0;
 }
 /* add some padding to the logo */
