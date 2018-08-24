@@ -46,7 +46,17 @@ ul#slide-out li:not(:nth-child(1)) a:hover {
 
 ul#slide-out li:not(:nth-child(1)) a.active {
   background-color: rgba(0, 0, 0, 0.4);
-  border-left: 10px solid rgb(255, 0, 0);
+  border-left: 2px solid rgb(255, 0, 0);
+}
+
+ul#slide-out > li:nth-child(8) {
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.3);
+}
+
+ul#slide-out li#langSwitch a {
+  font-size: 0.8em;
+  padding-left: 21px;
+  outline: none;
 }
 
 /* menu */

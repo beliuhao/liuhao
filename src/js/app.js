@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // init the tooltip instance
     let tooltipEls = document.querySelectorAll(".tooltipped");
     var instanceOfTooltip = M.Tooltip.init(tooltipEls, {});
-
+    // init the dropdown instance
+    var dropdownEls = document.querySelectorAll('.dropdown-trigger');
+    var instanceOfDropdown = M.Dropdown.init(dropdownEls, {coverTrigger: false});
     // slide the carousel automaticallys
     const moveCarousel = function() {
       let currentCarousel = M.Carousel.getInstance(carouselEls[0]);
