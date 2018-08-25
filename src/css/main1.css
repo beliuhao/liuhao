@@ -1,14 +1,17 @@
 /* ------ page ------ */
+
 /* Make sure that padding behaves as expected */
 * {
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 /* ------ Navigation Menu ------ */
 
 ul#slide-out {
   width: 180px;
-  background-color: #011627;
+  background: #1a1a1a;
+  background-image: linear-gradient(#000,#121212);
 }
 
 ul#slide-out #logo {
@@ -22,7 +25,7 @@ ul#slide-out li > a {
 
 ul#slide-out li a span {
   text-transform: uppercase;
-  color: #FDFFFC;
+  color: #c8c8c8;
 }
 
 ul#slide-out li > a > i {
@@ -32,7 +35,7 @@ ul#slide-out li > a > i {
 /* add a bottom border to its parent  */
 ul#slide-out > li:nth-child(1) {
   padding: 10px 0;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.6);
 }
 
 ul#slide-out li:not(:nth-child(1)) a.active,
@@ -45,8 +48,12 @@ ul#slide-out li:not(:nth-child(1)) a.active {
   border-left: 2px solid rgb(255, 0, 0);
 }
 
+ul#slide-out li:not(:nth-child(1)) a:hover span {
+  color: #fff;
+}
+
 ul#slide-out li:not(:nth-child(1)) a.active span {
-  font-weight: bold;
+  color: #fff;
 }
 
 ul#slide-out > li:nth-child(8) {
@@ -73,7 +80,10 @@ div#fixedNav {
   z-index: 1;
   height: 65px;
   width: 100%;
-  background-color: rgba(244, 244, 244, 0.95);
+  background: #f7f7f7;
+  border-bottom: 1px solid #dadada;
+  box-shadow: 0 2px 4px rgba(0,0,0,.04);
+  background-image: linear-gradient(#fff,#f1f1f1);
   color: #555;
   font-size: 1.2rem;
   display: flex;
@@ -119,14 +129,14 @@ section h3.page-title {
   text-transform: uppercase;
 }
 
+.align-r {
+  text-align: right;
+}
+
 /* section Intro */
 section#intro {
   padding-top: 85px;
   text-align: center;
-}
-section#intro h3,
-section#intro p {
-  font-family: "Raleway", sans-serif;
 }
 
 section#intro p {
@@ -160,7 +170,7 @@ section#about div.aboutRow div.imgAbout {
 
 section#about div.aboutRow div.contentAbout {
   text-align: right;
-  border-left: 2px red solid;
+  border-left: 5px #ff5252 solid;
   min-width: 50%;
 }
 
@@ -176,7 +186,7 @@ section#about img.responsive-img {
 section#experience div#expRow {
   margin-top: 10px;
   padding: 10px 10px 10px 20px;
-  border-left: 2px solid #fb8c00;
+  border-left: 5px solid #ffab40;
 }
 
 section#experience div#expRow .cardHead {
@@ -204,6 +214,9 @@ section#experience div#expRow ul li {
 }
 
 section#experience div#expRow div.card-action {
+  color: #666;
+  background: #fafafa;
+  border-bottom: 1px solid rgba(0,0,0,.1);
   position: relative;
 }
 
@@ -661,7 +674,7 @@ section#contact #contactList p a:nth-child(2):hover {
   section#about div.aboutRow {
     flex-direction: column;
     padding: 10px;
-    border-left: 2px solid red;
+    border-left: 5px #ff5252 solid;;
   }
 
   section#about div.aboutRow div.contentAbout {
