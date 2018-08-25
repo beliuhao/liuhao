@@ -23,74 +23,74 @@
 
 <body>
   <!-- Navigation Menu-->
-  <!-- import the sidenav component from Materialize -->
-  <ul id="slide-out" class="sidenav sidenav-fixed">
-    <li>
-      <a href="#intro" class="center" style="height: 100px;">
-        <img id="logo" src="src/img/liuhao.png" alt="Liu Hao">
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect waves-red" href="#about">
-        <i class="small material-icons red-text text-accent-2">person</i>
-        <span class="light">个人简介</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect waves-orange" href="#experience">
-        <i class="small material-icons orange-text text-accent-2">trending_up</i>
-        <span class="light">工作经历</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect waves-green" href="#projects">
-        <i class="small material-icons green-text text-accent-2">web</i>
-        <span class="light">项目经验</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect waves-purple" href="#skills">
-        <i class="small material-icons deep-purple-text text-accent-2">equalizer</i>
-        <span class="light">实践技能</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect waves-light" href="#education">
-        <i class="small material-icons light-blue-text text-darken-1">school</i>
-        <span class="light">教育背景</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect waves-teal" href="#contact">
-        <i class="small material-icons teal-text text-lighten-1">email</i>
-        <span class="light">联系方式</span>
-      </a>
-    </li>
-
-    <li id="resume">
-      <a class="waves-effect" href="#">
-        <i class="small material-icons ">attachment</i>
-        <span class="light">简历下载</span>
-      </a>
-    </li>
-
-    <li id="langSwitch">
-      <a class='waves-effect' href="index.html">
-        <i class="flag-icon flag-icon-us"></i>
-        <span class="light">EN</span>
-      </a>
-    </li>
-
-  </ul>
-  <a id="menu" href="#" data-target="slide-out" class="sidenav-trigger">
-    <i class="material-icons red-text text-accent-2">menu</i>
-  </a>
+  <!-- sidenav component from Materialize -->
+  <div id="sideNav">
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+        <a href="#intro" class="center" style="height: 100px;">
+          <img id="logo" src="src/img/liuhao.png" alt="Liu Hao">
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#about">
+          <i class="small material-icons red-text text-accent-2">person</i>
+          <span class="">个人简介</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#experience">
+          <i class="small material-icons orange-text text-accent-2">trending_up</i>
+          <span class="">工作经历</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#projects">
+          <i class="small material-icons green-text text-accent-4">web</i>
+          <span class="">项目经验</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#skills">
+          <i class="small material-icons deep-purple-text text-accent-2">equalizer</i>
+          <span class="">实践技能</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#education">
+          <i class="small material-icons light-blue-text text-darken-1">school</i>
+          <span class="">教育背景</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#contact">
+          <i class="small material-icons teal-text text-lighten-1">email</i>
+          <span class="">联系方式</span>
+        </a>
+      </li>
+      <li id="resume">
+        <a class="waves-effect" href="#">
+          <i class="small material-icons yellow-text">attachment</i>
+          <span class="">简历下载</span>
+        </a>
+      </li>
+      <li id="langSwitch">
+        <a class='waves-effect' href="index.html">
+          <i class="flag-icon flag-icon-us"></i>
+          <span class="">EN</span>
+        </a>
+      </li>
+    </ul>
+    <!-- sidenav menu -->
+    <a id="sideNavMenu" href="#" data-target="slide-out" class="sidenav-trigger">
+      <i class="material-icons red-text text-accent-2">menu</i>
+    </a>
+  </div>
 
   <!-- fixedNav -->
   <div id="fixedNav">
     <div id="navContainer">
       <div><b>刘 豪</b></div>
-      <i class="material-icons red-text">chevron_right</i>
+      <i class="material-icons red-text text-accent-2">chevron_right</i>
       <div>网页开发</div>
     </div>
   </div>
@@ -102,27 +102,25 @@
       <div id="pt" class="canvas"></div>
       <div class="container grey-text text-lighten-5">
         <h3>Hello</h3>
-        <p>Welcome to my personal website.
-          <p>
-            <h3>I'm <span class="highlight red-text">刘 豪</span></h3>
-            <p>A self-taught programmer & life-long learner.</p>
-            <div id="pulseBtn">
-              <a href="#about" class="btn-floating cyan pulse">
-                <i class="material-icons">keyboard_arrow_down</i>
-              </a>
-            </div>
+        <p>Welcome to my personal website.<p>
+        <h3>I'm <span class="highlight red-text text-accent-2">刘 豪</span></h3>
+        <p>A self-taught programmer & life-long learner.</p>
+        <a href="#about" class="btn-floating cyan pulse">
+          <i class="material-icons">keyboard_arrow_down</i>
+        </a>
       </div>
     </section>
+
     <!-- section About -->
     <section id="about" class="section">
       <h3 class="page-title white-text red accent-2">个人简介</h3>
       <div class="container">
-        <div id="aboutRow1" class="aboutRow">
-          <div id="devdesImg" class="imgAbout">
-            <img class="responsive-img" src="src/img/devdes.png" alt="Developer & Designer">
+        <div class="about-row">
+          <div class="about-img">
+            <img class="responsive-img" src="src/img/about/devdes.png" alt="Developer & Designer">
           </div>
-          <div id="devdesContent" class="contentAbout">
-            <div id="developer">
+          <div class="about-content">
+            <div>
               <h5>既是开发者</h5>
               <ul>
                 <li>前端开发</li>
@@ -131,7 +129,7 @@
                 <li>Node / SQL / Database</li>
               </ul>
             </div>
-            <div id="designer">
+            <div>
               <h5>又兼设计师</h5>
               <ul>
                 <li>UX / UI 设计</li>
@@ -142,19 +140,19 @@
           </div>
         </div>
         <div class="divider"></div>
-        <div id="aboutRow2" class="aboutRow">
-          <div id="assessImg" class="imgAbout">
-            <img class="responsive-img" src="src/img/selfassess.png" alt="Self-assessment">
+        <div class="about-row">
+          <div class="about-img">
+            <img class="responsive-img" src="src/img/about/selfassess.png" alt="Self-assessment">
           </div>
-          <div id="selfAssess" class="contentAbout">
+          <div id="selfAssess" class="about-content">
             <div>
               <h5>自我评估</h5>
               <ul>
-                <li><b>(1)</b> 学历能力 | 70'<b> (1)</b></li>
-                <li><b>(2)</b> 求知欲 | 90'<b> (2)</b></li>
-                <li><b>(3)</b> 专注力 | 75'<b> (3)</b></li>
-                <li><b>(4)</b> 耐心及毅力 | 70'<b> (4)</b></li>
-                <li><b>(5)</b> 沟通能力 | 60'<b> (5)</b></li>
+                <li><b>( 1 )</b> 学习能力 | 70'<b> ( 1 )</b></li>
+                <li><b>( 2 )</b> 求知欲 | 90'<b> ( 2 )</b></li>
+                <li><b>( 3 )</b> 专注力 | 75'<b> ( 3 )</b></li>
+                <li><b>( 4 )</b> 耐心及毅力 | 70'<b> ( 4 )</b></li>
+                <li><b>( 5 )</b> 沟通能力 | 60'<b> ( 5 )</b></li>
               </ul>
             </div>
             <div>
@@ -168,14 +166,19 @@
         </div>
       </div>
     </section>
+
     <!-- section Experience -->
     <section id="experience" class="section">
       <h3 class="page-title white-text orange accent-2">工作经历</h3>
       <div class="container">
         <div id="expRow" class="row">
           <div class="card">
+            <div class="card-header">
+              <i class="material-icons orange-text text-accent-2">timeline</i>
+              <span>2017/08 - 至今 | 深圳</span>
+            </div>
             <div class="card-content">
-              <div class="cardHead">
+              <div class="card-head">
                 <a href="https://www.freecodecamp.org/" target="_blank">
                   <i class="fab fa-free-code-camp fa-5x"></i>
                 </a>
@@ -185,11 +188,11 @@
                 </div>
               </div>
               <div class="divider"></div>
-              <p class="corpIntro">
+              <blockquote>
                 <em class="grey-text">
-                    freeCodeCamp是一个非营利组织，由一个互动学习网络平台，一个在线社区论坛，聊天室，媒体出版物和当地组织组成，旨在让任何人都可以访问学习网站开发。
+                  freeCodeCamp是一个非营利组织，由一个互动学习网络平台，一个在线社区论坛，聊天室，媒体出版物和当地组织组成，旨在让任何人都可以访问学习网站开发
                 </em>
-              </p>
+              </blockquote>
               <h6>参与课程</h6>
               <ul>
                 <li>响应式网页设计认证（300小时）</li>
@@ -204,16 +207,16 @@
                 <li>项目总计30个，共完成7个</li>
               </ul>
             </div>
-            <div class="card-action">
-              <i class="material-icons orange-text text-darken-1">remove_circle_outline</i>
-              <span>2017/08 - 至今 | 中国，深圳</span>
-            </div>
           </div>
           <div class="card">
+            <div class="card-header">
+              <i class="material-icons orange-text text-accent-2">timeline</i>
+              <span>2015/07 - 2017/07 | 深圳</span>
+            </div>
             <div class="card-content">
-              <div class="cardHead">
+              <div class="card-head">
                 <a href="http://www.casic.com/" target="_blank">
-                  <img style="height: 65px; width: auto" src="src/img/casic.png" alt="Casic logo">
+                  <img style="height: 65px; width: auto" src="src/img/experience/casic.png" alt="Casic logo">
                 </a>
                 <div>
                   <p>航天科工深圳（集团）有限公司</p>
@@ -221,31 +224,27 @@
                 </div>
               </div>
               <div class="divider"></div>
-              <p class="corpIntro">
+              <blockquote>
                 <em class="grey-text">
                   电气研究院是航天科工深圳（集团）有限公司旗下专业从事智能电网领域产品研发与设计的单位
                 </em>
-              </p>
+              </blockquote>
               <h6>开发产品</h6>
               <ul>
                 <li>智能环网柜基础数据平台</li>
               </ul>
               <h6>取得成绩</h6>
               <ul>
-                <li>所参与子课题“数据采集系统”获集团公司年度技术革新一等奖</li>
-                <li>所主导子课题“智能运维系统”获集团公司年度技术革新三等奖</li>
-                <li>基于MySQL和个性化定制的Redis数据库，开发了一套高效稳定的实时-历史数据读写系统</li>
+                  <li>所参与子课题“数据采集系统”获集团公司年度技术革新一等奖</li>
+                  <li>所主导子课题“智能运维系统”获集团公司年度技术革新三等奖</li>
+                  <li>基于MySQL和个性化定制的Redis数据库，开发了一套高效稳定的实时-历史数据读写系统</li>
               </ul>
             </div>
-            <div class="card-action">
-              <i class="material-icons orange-text text-darken-1">remove_circle_outline</i>
-              <span>2015/07 - 2017/07 | 中国，深圳</span>
-            </div>
           </div>
-
         </div>
       </div>
     </section>
+
     <!-- section Projects -->
     <section id="projects" class="section">
       <h3 class="page-title white-text green">项目经验</h3>
@@ -255,7 +254,7 @@
           <!-- <h2>FCC-P000-SteveJobs</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p000.jpg" alt="fcc-p000">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p000.jpg" alt="fcc-p000">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>构建一个致敬页面</h5>
@@ -287,7 +286,7 @@
           <!-- <h2>FCC-P001-SurveyForm</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p001.jpg" alt="fcc-p001">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p001.jpg" alt="fcc-p001">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>构建一个调查表页面</h5>
@@ -320,7 +319,7 @@
           <!-- <h2>FCC-P002-ProductLandingPage</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p002.jpg" alt="fcc-p002">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p002.jpg" alt="fcc-p002">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>构建一个产品首页</h5>
@@ -353,7 +352,7 @@
           <!-- <h2>FCC-P003-TechnicalDocumentationPage</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p003.jpg" alt="fcc-p003">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p003.jpg" alt="fcc-p003">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>构建一个技术文档页</h5>
@@ -385,7 +384,7 @@
           <!-- <h2>FCC-P004-RandomQuoteMachine</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p004.jpg" alt="fcc-p004">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p004.jpg" alt="fcc-p004">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>构建一个随机语录机</h5>
@@ -416,7 +415,7 @@
           <!-- <h2>FCC-P006-PersonalWebsite</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p005.jpg" alt="fcc-p005">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p005.jpg" alt="fcc-p005">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>构建一个个人网站</h5>
@@ -446,8 +445,8 @@
         </div>
 
       </div>
-      <!-- </div> -->
     </section>
+
     <!-- section Skills -->
     <section id="skills" class="section">
       <h3 class="page-title white-text deep-purple accent-2">实践技能</h3>
@@ -521,18 +520,18 @@
         </div>
       </div>
     </section>
+
     <!-- section Education -->
     <section id="education" class="section">
       <h3 class="page-title white-text light-blue darken-1">教育背景</h3>
       <div class="container">
         <div id="eduRow" class="row">
           <div class="col s12">
-            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">remove_circle_outline</i></span>2015/06
-              - 2012/07</h6>
-            <span class="">工学硕士</span>
+            <h6 class="header"><span><i class="material-icons light-blue-text text-darken-1">label</i></span>2015/06
+              - 2012/07 | 工学硕士</h6>
             <div class="card ">
               <div class="card-image">
-                <img class="responsive-img" src="src/img/hust.jpg" alt="HUST">
+                <img class="responsive-img" src="src/img/education/hust.jpg" alt="HUST">
                 <span>建校于1952，首批入选国家“211工程”、“985工程”的重点大学</span>
               </div>
               <div class="card-stacked">
@@ -548,12 +547,11 @@
             </div>
           </div>
           <div class="col s12">
-            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">remove_circle_outline</i></span>2012/07
-              - 2008/09</h6>
-            <span class="">本科学士</span>
+            <h6 class="header"><span><i class="material-icons light-blue-text text-darken-1">label</i></span>2012/07
+              - 2008/09 | 本科学士</h6>
             <div class="card ">
               <div class="card-image">
-                <img class="responsive-img" src="src/img/hust.jpg" alt="HUST">
+                <img class="responsive-img" src="src/img/education/hust.jpg" alt="HUST">
                 <span>建校于1952，首批入选国家“211工程”、“985工程”的重点大学</span>
               </div>
               <div class="card-stacked">
@@ -569,12 +567,11 @@
             </div>
           </div>
           <div class="col s12">
-            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">remove_circle_outline</i></span>2008/06
-              - 2005/09</h6>
-            <span class="">高中</span>
+            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">label</i></span>2008/06
+              - 2005/09 | 高中</h6>
             <div class="card ">
               <div class="card-image">
-                <img class="responsive-img" src="src/img/mcyz.jpg" alt="MCYZ">
+                <img class="responsive-img" src="src/img/education/mcyz.jpg" alt="MCYZ">
                 <span>建校于1905，入选湖北省示范中学</span>
               </div>
               <div class="card-stacked">
@@ -590,6 +587,7 @@
           </div>
         </div>
     </section>
+
     <!-- section Contact -->
     <section id="contact" class="section full-height">
       <h3 class="page-title white-text teal lighten-1">联系方式</h3>

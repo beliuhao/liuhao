@@ -17,80 +17,80 @@
   <!-- flag-icon-css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css">
   <!-- Customized CSS -->
-  <link rel="stylesheet" href="src/css/main1.css">
+  <link rel="stylesheet" href="src/css/main.css">
   <title>Liu Hao | Web Developer</title>
 </head>
 
 <body>
   <!-- Navigation Menu-->
-  <!-- import the sidenav component from Materialize -->
-  <ul id="slide-out" class="sidenav sidenav-fixed">
-    <li>
-      <a href="#intro" class="center" style="height: 100px;">
-        <img id="logo" src="src/img/liuhao.png" alt="Liu Hao">
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect" href="#about">
-        <i class="small material-icons red-text text-accent-2">person</i>
-        <span class="">About</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect" href="#experience">
-        <i class="small material-icons orange-text text-accent-2">trending_up</i>
-        <span class="">Experience</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect" href="#projects">
-        <i class="small material-icons green-text text-accent-4">web</i>
-        <span class="">Projects</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect" href="#skills">
-        <i class="small material-icons deep-purple-text text-accent-2">equalizer</i>
-        <span class="">Skills</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect" href="#education">
-        <i class="small material-icons light-blue-text text-darken-1">school</i>
-        <span class="">Education</span>
-      </a>
-    </li>
-    <li>
-      <a class="waves-effect" href="#contact">
-        <i class="small material-icons teal-text text-lighten-1">email</i>
-        <span class="">Contact</span>
-      </a>
-    </li>
-
-    <li id="resume">
-      <a class="waves-effect" href="#">
-        <i class="small material-icons yellow-text">attachment</i>
-        <span class="">Resume</span>
-      </a>
-    </li>
-
-    <li id="langSwitch">
-      <a class='waves-effect' href="index.cn.html">
-        <i class="flag-icon flag-icon-cn"></i>
-        <span class="">中文</span>
-      </a>
-    </li>
-
-  </ul>
-  <a id="menu" href="#" data-target="slide-out" class="sidenav-trigger">
-    <i class="material-icons red-text text-accent-2">menu</i>
-  </a>
+  <!-- sidenav component from Materialize -->
+  <div id="sideNav">
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+        <a href="#intro" class="center" style="height: 100px;">
+          <img id="logo" src="src/img/liuhao.png" alt="Liu Hao">
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#about">
+          <i class="small material-icons red-text text-accent-2">person</i>
+          <span class="">About</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#experience">
+          <i class="small material-icons orange-text text-accent-2">trending_up</i>
+          <span class="">Experience</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#projects">
+          <i class="small material-icons green-text text-accent-4">web</i>
+          <span class="">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#skills">
+          <i class="small material-icons deep-purple-text text-accent-2">equalizer</i>
+          <span class="">Skills</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#education">
+          <i class="small material-icons light-blue-text text-darken-1">school</i>
+          <span class="">Education</span>
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#contact">
+          <i class="small material-icons teal-text text-lighten-1">email</i>
+          <span class="">Contact</span>
+        </a>
+      </li>
+      <li id="resume">
+        <a class="waves-effect" href="#">
+          <i class="small material-icons yellow-text">attachment</i>
+          <span class="">Resume</span>
+        </a>
+      </li>
+      <li id="langSwitch">
+        <a class='waves-effect' href="index.cn.html">
+          <i class="flag-icon flag-icon-cn"></i>
+          <span class="">中文</span>
+        </a>
+      </li>
+    </ul>
+    <!-- sidenav menu -->
+    <a id="sideNavMenu" href="#" data-target="slide-out" class="sidenav-trigger">
+      <i class="material-icons red-text text-accent-2">menu</i>
+    </a>
+  </div>
 
   <!-- fixedNav -->
   <div id="fixedNav">
     <div id="navContainer">
       <div><b>Liu Hao</b></div>
-      <i class="material-icons red-text">chevron_right</i>
+      <i class="material-icons red-text text-accent-2">chevron_right</i>
       <div>Web Developer</div>
     </div>
   </div>
@@ -102,27 +102,25 @@
       <div id="pt" class="canvas"></div>
       <div class="container grey-text text-lighten-5">
         <h3>Hello</h3>
-        <p>Welcome to my personal website.
-          <p>
-            <h3>I'm <span class="highlight red-text">Liu Hao</span></h3>
-            <p>A self-taught programmer & life-long learner.</p>
-            <div id="pulseBtn">
-              <a href="#about" class="btn-floating cyan pulse">
-                <i class="material-icons">keyboard_arrow_down</i>
-              </a>
-            </div>
+        <p>Welcome to my personal website.<p>
+        <h3>I'm <span class="highlight red-text text-accent-2">Liu Hao</span></h3>
+        <p>A self-taught programmer & life-long learner.</p>
+        <a href="#about" class="btn-floating cyan pulse">
+          <i class="material-icons">keyboard_arrow_down</i>
+        </a>
       </div>
     </section>
+
     <!-- section About -->
     <section id="about" class="section">
       <h3 class="page-title white-text red accent-2">About</h3>
       <div class="container">
-        <div id="aboutRow1" class="aboutRow">
-          <div id="devdesImg" class="imgAbout">
-            <img class="responsive-img" src="src/img/devdes.png" alt="Developer & Designer">
+        <div class="about-row">
+          <div class="about-img">
+            <img class="responsive-img" src="src/img/about/devdes.png" alt="Developer & Designer">
           </div>
-          <div id="devdesContent" class="contentAbout">
-            <div id="developer">
+          <div class="about-content">
+            <div>
               <h5>Part Developer</h5>
               <ul>
                 <li>Front End development</li>
@@ -131,7 +129,7 @@
                 <li>Node / SQL / Database</li>
               </ul>
             </div>
-            <div id="designer">
+            <div>
               <h5>Part Designer</h5>
               <ul>
                 <li>UX / UI design</li>
@@ -142,19 +140,19 @@
           </div>
         </div>
         <div class="divider"></div>
-        <div id="aboutRow2" class="aboutRow">
-          <div id="assessImg" class="imgAbout">
-            <img class="responsive-img" src="src/img/selfassess.png" alt="Self-assessment">
+        <div class="about-row">
+          <div class="about-img">
+            <img class="responsive-img" src="src/img/about/selfassess.png" alt="Self-assessment">
           </div>
-          <div id="selfAssess" class="contentAbout">
+          <div id="selfAssess" class="about-content">
             <div>
               <h5>Self-Assessment</h5>
               <ul>
-                <li><b>(1)</b> Learning Ability | 70'<b> (1)</b></li>
-                <li><b>(2)</b> Thirst for Knowledge | 90'<b> (2)</b></li>
-                <li><b>(3)</b> Focus | 75'<b> (3)</b></li>
-                <li><b>(4)</b> Patience & Perseverance | 70'<b> (4)</b></li>
-                <li><b>(5)</b> Communication Skills | 60'<b> (5)</b></li>
+                <li><b>( 1 )</b> Learning Ability | 70'<b> ( 1 )</b></li>
+                <li><b>( 2 )</b> Thirst for Knowledge | 90'<b> ( 2 )</b></li>
+                <li><b>( 3 )</b> Focus | 75'<b> ( 3 )</b></li>
+                <li><b>( 4 )</b> Patience & Perseverance | 70'<b> ( 4 )</b></li>
+                <li><b>( 5 )</b> Communication Skills | 60'<b> ( 5 )</b></li>
               </ul>
             </div>
             <div>
@@ -168,18 +166,19 @@
         </div>
       </div>
     </section>
+
     <!-- section Experience -->
     <section id="experience" class="section">
-      <h3 class="page-title white-text orange accent-2 align-r">Experience</h3>
+      <h3 class="page-title white-text orange accent-2">Experience</h3>
       <div class="container">
         <div id="expRow" class="row">
           <div class="card">
-            <div class="card-action">
-              <i class="material-icons orange-text text-accent-2">label</i>
+            <div class="card-header">
+              <i class="material-icons orange-text text-accent-2">timeline</i>
               <span>2017/08 - Present | ShenZhen, China</span>
             </div>
             <div class="card-content">
-              <div class="cardHead">
+              <div class="card-head">
                 <a href="https://www.freecodecamp.org/" target="_blank">
                   <i class="fab fa-free-code-camp fa-5x"></i>
                 </a>
@@ -189,13 +188,12 @@
                 </div>
               </div>
               <div class="divider"></div>
-              <p class="corpIntro">
+              <blockquote>
                 <em class="grey-text">
                   freeCodeCamp is a non-profit organization that consists of an interactive learning web platform, an online community forum,
-                  chat rooms, Medium publications and local organizations that intend to make learning web development accessible
-                  to anyone.
+                  chat rooms, Medium publications and local organizations that intend to make learning web development accessible to anyone.
                 </em>
-              </p>
+              </blockquote>
               <h6>Curriculum Attended</h6>
               <ul>
                 <li>Responsive Web Design Certification (300 hours)</li>
@@ -212,14 +210,14 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-action">
-              <i class="material-icons orange-text text-accent-2">label</i>
+            <div class="card-header">
+              <i class="material-icons orange-text text-accent-2">timeline</i>
               <span>2015/07 - 2017/07 | ShenZhen, China</span>
             </div>
             <div class="card-content">
-              <div class="cardHead">
+              <div class="card-head">
                 <a href="http://www.casic.com/" target="_blank">
-                  <img style="height: 65px; width: auto" src="src/img/casic.png" alt="Casic logo">
+                  <img style="height: 65px; width: auto" src="src/img/experience/casic.png" alt="Casic logo">
                 </a>
                 <div>
                   <p>2 years in CASIC</p>
@@ -227,13 +225,13 @@
                 </div>
               </div>
               <div class="divider"></div>
-              <p class="corpIntro">
+              <blockquote>
                 <em class="grey-text">
                   The Electrical Research Institute is a unit under Aerospace Science & Industry Shenzhen (Group) Co. Ltd. and specializing
                   in the research, development and design of smart grid products, and a high-tech research and development
                   institution.
                 </em>
-              </p>
+              </blockquote>
               <h6>Product Developed</h6>
               <ul>
                 <li>Intelligent RMU Basis Data Platform.</li>
@@ -247,10 +245,10 @@
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </section>
+
     <!-- section Projects -->
     <section id="projects" class="section">
       <h3 class="page-title white-text green">Projects</h3>
@@ -260,7 +258,7 @@
           <!-- <h2>FCC-P000-SteveJobs</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p000.jpg" alt="fcc-p000">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p000.jpg" alt="fcc-p000">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>Build a Tribute Page</h5>
@@ -292,7 +290,7 @@
           <!-- <h2>FCC-P001-SurveyForm</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p001.jpg" alt="fcc-p001">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p001.jpg" alt="fcc-p001">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>Build a Survey Form</h5>
@@ -326,7 +324,7 @@
           <!-- <h2>FCC-P002-ProductLandingPage</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p002.jpg" alt="fcc-p002">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p002.jpg" alt="fcc-p002">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>Build a Product Landing Page</h5>
@@ -360,7 +358,7 @@
           <!-- <h2>FCC-P003-TechnicalDocumentationPage</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p003.jpg" alt="fcc-p003">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p003.jpg" alt="fcc-p003">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>Build a Technical Documentation Page</h5>
@@ -393,7 +391,7 @@
           <!-- <h2>FCC-P004-RandomQuoteMachine</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p004.jpg" alt="fcc-p004">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p004.jpg" alt="fcc-p004">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>Build a Random Quote Machine</h5>
@@ -425,7 +423,7 @@
           <!-- <h2>FCC-P006-PersonalWebsite</h2> -->
           <div class="project">
             <div class="proContainer">
-              <img class="projectImg responsive-img" src="src/img/fcc-p005.jpg" alt="fcc-p005">
+              <img class="projectImg responsive-img" src="src/img/projects/fcc-p005.jpg" alt="fcc-p005">
               <div class="projectIntro">
                 <div class="outline">
                   <h5>Build a Personal Portfolio Webpage</h5>
@@ -456,11 +454,11 @@
         </div>
 
       </div>
-      <!-- </div> -->
     </section>
+
     <!-- section Skills -->
     <section id="skills" class="section">
-      <h3 class="page-title white-text deep-purple accent-2 align-r">Skills</h3>
+      <h3 class="page-title white-text deep-purple accent-2">Skills</h3>
       <div class="container">
         <div id="skillsRow" class="row">
           <div class="card">
@@ -531,18 +529,18 @@
         </div>
       </div>
     </section>
+
     <!-- section Education -->
     <section id="education" class="section">
       <h3 class="page-title white-text light-blue darken-1">Education</h3>
       <div class="container">
         <div id="eduRow" class="row">
           <div class="col s12">
-            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">remove_circle_outline</i></span>2015/06
-              - 2012/07</h6>
-            <span class="">Master's Degree</span>
+            <h6 class="header"><span><i class="material-icons light-blue-text text-darken-1">label</i></span>2015/06
+              - 2012/07 | Master's Degree</h6>
             <div class="card ">
               <div class="card-image">
-                <img class="responsive-img" src="src/img/hust.jpg" alt="HUST">
+                <img class="responsive-img" src="src/img/education/hust.jpg" alt="HUST">
                 <span>Established in 1952. Included in the Project 211 and 985.</span>
               </div>
               <div class="card-stacked">
@@ -558,12 +556,11 @@
             </div>
           </div>
           <div class="col s12">
-            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">remove_circle_outline</i></span>2012/07
-              - 2008/09</h6>
-            <span class="">Bachelor's Degree</span>
+            <h6 class="header"><span><i class="material-icons light-blue-text text-darken-1">label</i></span>2012/07
+              - 2008/09 | Bachelor's Degree</h6>
             <div class="card ">
               <div class="card-image">
-                <img class="responsive-img" src="src/img/hust.jpg" alt="HUST">
+                <img class="responsive-img" src="src/img/education/hust.jpg" alt="HUST">
                 <span>Established in 1952. Included in the Project 211 and 985.</span>
               </div>
               <div class="card-stacked">
@@ -579,12 +576,11 @@
             </div>
           </div>
           <div class="col s12">
-            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">remove_circle_outline</i></span>2008/06
-              - 2005/09</h6>
-            <span class="">Hight School's Degree</span>
+            <h6 class="header"><span><i class="material-icons blue-text text-darken-1">label</i></span>2008/06
+              - 2005/09 | Hight School's Degree</h6>
             <div class="card ">
               <div class="card-image">
-                <img class="responsive-img" src="src/img/mcyz.jpg" alt="MCYZ">
+                <img class="responsive-img" src="src/img/education/mcyz.jpg" alt="MCYZ">
                 <span>Established in 1905. One of the Hubei provincial model mid-schools.</span>
               </div>
               <div class="card-stacked">
@@ -600,9 +596,10 @@
           </div>
         </div>
     </section>
+
     <!-- section Contact -->
     <section id="contact" class="section full-height">
-      <h3 class="page-title white-text teal lighten-1 align-r">Contact</h3>
+      <h3 class="page-title white-text teal lighten-1">Contact</h3>
       <div class="container">
         <div id="contactList">
           <p>

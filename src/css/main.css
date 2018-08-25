@@ -1,70 +1,86 @@
-/* ------ page ------ */
-/* Make sure that padding behaves as expected */
+/* ------ The whole page ------ */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
+/* ------ END ------ */
 
 /* ------ Navigation Menu ------ */
-
-/* sidenav width */
-ul#slide-out {
+/* sideNav */
+div#sideNav ul#slide-out {
   width: 180px;
+  background-color: #383c4a;
 }
-/* sidenav logo */
-ul#slide-out #logo {
+
+div#sideNav ul#slide-out img#logo {
   width: 100px;
   height: 100px;
 }
 
-ul#slide-out li > a {
+div#sideNav ul#slide-out li a {
   padding: 0 20px;
 }
 
-ul#slide-out li a span {
+div#sideNav ul#slide-out li a span {
   text-transform: uppercase;
+  color: #c8c8c8;
+  font-size: 0.8rem;
 }
 
-ul#slide-out li > a > i {
+div#sideNav ul#slide-out li a i {
   margin: 0 20px 0 0;
 }
-/* add some padding to the logo */
-/* add a bottom border to its parent  */
-ul#slide-out > li:nth-child(1) {
+
+div#sideNav ul#slide-out li:nth-child(1) {
   padding: 10px 0;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
-}
-/* remove the logo hover effect */
-ul#slide-out > li:nth-child(1) > a:hover {
-  background-color: white;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.6);
 }
 
-ul#slide-out li:not(:nth-child(1)) a.active,
-ul#slide-out li:not(:nth-child(1)) a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+div#sideNav ul#slide-out li:nth-child(1) a:hover {
+  background-color: #383c4a;
 }
 
-ul#slide-out li:not(:nth-child(1)) a.active {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-left: 2px solid rgb(255, 0, 0);
+div#sideNav ul#slide-out li:not(:nth-child(1)) a.active,
+div#sideNav ul#slide-out li:not(:nth-child(1)) a:hover {
+  background-color: rgba(128, 128, 128, 0.6);
 }
 
-ul#slide-out > li:nth-child(8) {
-  border-bottom: 1px dashed rgba(128, 128, 128, 0.3);
+div#sideNav ul#slide-out li:not(:nth-child(1)) a.active {
+  background-color: grey;
+  border-left: 5px solid #d32f2f;
 }
 
-/* menu */
-#menu {
+div#sideNav ul#slide-out li a:hover span {
+  color: #fff;
+}
+
+div#sideNav ul#slide-out li a.active span {
+  color: #fff;
+}
+
+div#sideNav ul#slide-out li:nth-child(9) {
+  border-top: 1px dashed rgba(128, 128, 128, 0.6);
+}
+div#sideNav ul#slide-out li:nth-child(9) a i{
+  margin-left: 5px;
+}
+/* END */
+
+/* sideNavMenu */
+div#sideNav a#sideNavMenu {
   position: fixed;
   top: 0;
   z-index: 2;
   transition: top 0.3s;
 }
 
-#menu > .material-icons {
+div#sideNav a#sideNavMenu i.material-icons {
   font-size: 35px;
   padding: 15px;
 }
+/* END */
 
 /* ------ fixedNav ------ */
 div#fixedNav {
@@ -73,28 +89,24 @@ div#fixedNav {
   z-index: 1;
   height: 65px;
   width: 100%;
-  background-color: rgba(244, 244, 244, 0.95);
+  background: #f7f7f7;
+  border-bottom: 1px solid #dadada;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  background-image: linear-gradient(#fff, #f1f1f1);
   color: #555;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding-left: 180px;
   transition: top 0.3s;
 }
 
 div#fixedNav div#navContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  padding: 7.5px;
 }
-
-div#fixedNav div#navContainer div {
-  height: 25px;
-}
+/* ------ END ------ */
 
 /* ------ main ------ */
 main {
@@ -102,20 +114,19 @@ main {
 }
 
 /* --- section --- */
-/* make the section full height */
+/* make the section full height of Viewport*/
 main .full-height {
   height: 100vh;
 }
-
+/* remove the extra padding from section */
 main .section {
   padding: 0;
 }
 
 section h3.page-title {
   font-size: 35px;
-  font-weight: 200;
   margin: 0;
-  padding: 20px 20px;
+  padding: 20px;
   text-transform: uppercase;
 }
 
@@ -124,97 +135,105 @@ section#intro {
   padding-top: 85px;
   text-align: center;
 }
-section#intro h3,
-section#intro p {
-  font-family: "Raleway", sans-serif;
-}
 
 section#intro p {
   font-size: 1.8rem;
   color: rgb(122, 122, 122);
 }
 
-section#intro div#pulseBtn a {
+section#intro a.btn-floating {
   z-index: 0;
+  margin-top: 20px;
 }
 
-section .highlight {
+section#intro .highlight {
   border-bottom: 2px solid;
 }
+/* END */
 
 /* section About */
-section#about div.aboutRow {
+section#about div.about-row {
   margin: 20px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-section#about div.aboutRow div {
+section#about div.about-row div {
   align-self: center;
 }
 
-section#about div.aboutRow div.imgAbout {
+section#about div.about-row div.about-img {
   max-width: 60%;
 }
 
-section#about div.aboutRow div.contentAbout {
+section#about div.about-row div.about-content {
   text-align: right;
-  border-left: 2px red solid;
+  border-left: 5px #ff5252 solid;
   min-width: 50%;
 }
 
-section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1) {
+section#about div.about-row div.about-content ul li {
+  line-height: 2rem;
+}
+
+section#about div.about-row div.about-content#selfAssess ul li b:nth-child(1) {
   display: none;
 }
 
 section#about img.responsive-img {
   max-width: 65%;
 }
+/* END */
 
 /* section Experience */
 section#experience div#expRow {
   margin-top: 10px;
   padding: 10px 10px 10px 20px;
-  border-left: 2px solid #fb8c00;
 }
 
-section#experience div#expRow .cardHead {
+section#experience div#expRow div.card-header {
+  height: 50px;
+  background: #fafafa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+section#experience div#expRow div.card-header span {
+  padding-left: 10px;
+}
+
+section#experience div#expRow .card-head {
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-section#experience div#expRow .cardHead div {
+section#experience div#expRow .card-head i {
+  color: darkgreen;
+}
+
+section#experience div#expRow .card-head div {
   align-self: center;
   text-align: right;
 }
 
-section#experience div#expRow .corpIntro {
-  padding-top: 10px;
-}
-
-section#experience div#expRow h6 {
-  text-transform: uppercase;
+section#experience div#expRow blockquote {
+  border-left: 5px solid #ffab40;
 }
 
 section#experience div#expRow ul li {
   list-style: disc inside;
+  line-height: 2rem;
 }
-
-section#experience div#expRow div.card-action {
-  position: relative;
-}
-
-section#experience div#expRow div.card-action i {
-  position: absolute;
-  left: -33px;
-  top: 15px;
-}
+/* END */
 
 /* section Projects */
-
 section#projects div.carousel {
   min-height: 800px;
 }
@@ -223,7 +242,6 @@ section#projects div.carousel div.carousel-item div.project {
   max-width: 75%;
   height: 85%;
   margin: 40px auto;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,7 +269,6 @@ section#projects
   width: 100%;
   height: 100%;
   margin-bottom: 5px;
-  /* border: 2px solid yellow; */
   background: rgba(255, 255, 255, 0.8);
   background: linear-gradient(
     rgba(83, 219, 112, 0.9),
@@ -358,7 +375,6 @@ section#projects
   div.projectIntro
   div.sourceCode {
   height: 40%;
-  /* border-top: 2px solid green; */
   position: relative;
   display: flex;
   flex-direction: row;
@@ -374,7 +390,6 @@ section#projects
   div.sourceCode
   a {
   color: white;
-  /* padding-bottom: 2%; */
   align-self: center;
 }
 
@@ -388,6 +403,7 @@ section#projects
   a:hover {
   color: black;
 }
+/* END */
 
 /* section Skills */
 section#skills div#skillsRow {
@@ -396,14 +412,13 @@ section#skills div#skillsRow {
 }
 
 section#skills div#skillsRow h5 {
-  text-transform: uppercase;
   font-weight: lighter;
 }
 
 /* Container for skill bars */
 section#skills div.skillContainer {
-  width: 100%; /* Full width */
-  background-color: #e9e5e2; /* Grey background */
+  width: 100%;
+  background-color: #e9e5e2;
   margin: 10px auto;
   padding: 1px 2px;
   border-radius: 20px;
@@ -436,7 +451,6 @@ section#skills div.skillContainer .html {
   width: 90%;
   background-color: #f674a4;
   background-image: linear-gradient(top, #f674a4, #e06995);
-  /* animation: html 2s ease-out; */
 }
 section#skills div.skillContainer .css {
   width: 85%;
@@ -490,17 +504,13 @@ section#skills div.skillContainer .git {
   background-color: #66b3cc;
   background-image: linear-gradient(top, #66b3cc, #5da3ba);
 }
-
-/* @keyframes html {
-  0%  { width:0px;}
-  100%{ width:90%;}
-} */
+/* END */
 
 /* section Education */
 section#education div#eduRow {
   margin-top: 10px;
   padding-left: 10px;
-  border-left: 2px solid #1e88e5;
+  border-left: 5px solid #039be5;
 }
 
 section#education div#eduRow div.col h6.header {
@@ -511,6 +521,10 @@ section#education div#eduRow div.col h6.header > span {
   position: absolute;
   left: -34px;
   top: -2px;
+}
+
+section#education div.card-content ul li {
+  line-height: 2rem;
 }
 
 section#education div.card-image {
@@ -541,6 +555,8 @@ section#education div.card-image:hover span {
   bottom: 0;
   transition: bottom 0.5s ease-in-out;
 }
+/* END */
+
 /* section Contact */
 section#contact.full-height {
   height: 750px;
@@ -552,6 +568,10 @@ section#contact #contactList {
   align-items: flex-start;
   margin: 50px auto;
   padding: 30px;
+}
+
+section#contact #contactList p {
+  margin: 15px 0;
 }
 
 section#contact #contactList p a:nth-child(1) {
@@ -566,15 +586,10 @@ section#contact #contactList p a:nth-child(2) {
 section#contact #contactList p a:nth-child(2):hover {
   border-bottom: 1px solid red;
 }
+/* END */
 
-/* fixedNav only show when sidenav is hidden */
-@media (min-width: 992px) {
-  #fixedNav {
-    display: none;
-  }
-}
-
-/* main */
+/* ------ @media ------ */
+/* --- main --- */
 @media (max-width: 992px) {
   main {
     margin-top: 0px;
@@ -584,6 +599,14 @@ section#contact #contactList p a:nth-child(2):hover {
     padding-left: 0px;
   }
 }
+
+/* --- fixedNav --- */
+@media (min-width: 992px) {
+  div#fixedNav {
+    display: none;
+  }
+}
+/* END */
 
 @media (max-width: 512px) {
   /* --- fixedNav --- */
@@ -595,13 +618,13 @@ section#contact #contactList p a:nth-child(2):hover {
   }
   div#fixedNav div#navContainer div {
     align-self: flex-end;
+    padding-right: 15px;
   }
   div#fixedNav div#navContainer i {
     display: none;
   }
-  div.card-image span {
-    line-height: 25px;
-  }
+  /* END */
+
   /* section Intro */
   section#intro h3 {
     font-size: 1.5rem;
@@ -610,20 +633,29 @@ section#contact #contactList p a:nth-child(2):hover {
   section#intro p {
     font-size: 1.2rem;
   }
+  /* END */
 
   /* section Experience */
-  section#experience div#expRow .cardHead {
+  section#experience div#expRow .card-head {
     flex-direction: column;
   }
-  section#experience div#expRow .cardHead a {
+  section#experience div#expRow .card-head a {
     align-self: center;
   }
-  section#experience div#expRow .cardHead div {
+  section#experience div#expRow .card-head div {
     align-self: center;
     text-align: center;
   }
+  /* END */
+
+  /* section Education */
+  div.card-image span {
+    line-height: 25px;
+  }
+  /* END */
 }
 
+/* section Intro */
 @media (max-height: 452px) {
   section#intro h3 {
     font-size: 1.8rem;
@@ -634,17 +666,57 @@ section#contact #contactList p a:nth-child(2):hover {
     display: none;
   }
 }
+/* END */
 
-@media (max-width: 378px) {
-  section#contact #contactList {
-    align-items: center;
+/* section About */
+@media (max-width: 738px) {
+  section#about div.about-row {
+    flex-direction: column;
   }
-  section#contact #contactList p a:nth-child(2) {
+
+  section#about div.about-row div.about-content {
+    border-left: none;
+    text-align: center;
+  }
+
+  section#about div.about-row div.about-content ul li {
+    list-style: none;
+  }
+
+  section#about
+    div.about-row
+    div.about-content#selfAssess
+    ul
+    li
+    b:nth-child(1) {
+    display: inline;
+  }
+
+  section#about
+    div.about-row
+    div.about-content#selfAssess
+    ul
+    li
+    b:nth-child(2) {
+    display: none;
+  }
+
+  section#about div.about-row div.about-img {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+/* END */
+
+/* section Skills */
+@media (max-width: 365px) {
+  section#skills div.skillContainer .skills span.skillTail {
     display: none;
   }
 }
+/* END */
 
-/* section education */
+/* section Education */
 @media (min-width: 1368px) {
   section#education div.card {
     display: flex;
@@ -655,48 +727,20 @@ section#contact #contactList p a:nth-child(2):hover {
     max-width: 50%;
   }
 }
+/* END */
 
-/* section about */
-@media (max-width: 738px) {
-  section#about div.aboutRow {
-    flex-direction: column;
-    padding: 10px;
-    border-left: 2px solid red;
+/* section Contact */
+@media (max-width: 390px) {
+  section#contact #contactList {
+    align-items: center;
   }
-
-  section#about div.aboutRow div.contentAbout {
-    border-left: none;
-    text-align: left;
-    padding-left: 10%;
-  }
-
-  section#about div.aboutRow div.contentAbout ul li {
-    list-style: disc inside;
-  }
-
-  section#about
-    div.aboutRow
-    div.contentAbout#selfAssess
-    > div:nth-child(1)
-    ul
-    li {
-    list-style: none;
-  }
-
-  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(1) {
-    display: inline;
-  }
-
-  section#about div.aboutRow div.contentAbout#selfAssess ul li b:nth-child(2) {
+  section#contact #contactList p a:nth-child(2) {
     display: none;
   }
-
-  section#about div.aboutRow div.imgAbout {
-    text-align: center;
-    max-width: 100%;
-  }
 }
+/* END */
 
+/* section Projects */
 @media (max-width: 1665px) {
   section#projects div.carousel div.carousel-item div.project div.proContainer {
     max-width: 100%;
@@ -820,12 +864,6 @@ section#contact #contactList p a:nth-child(2):hover {
     a
     i {
     font-size: 1.5em;
-  }
-}
-
-@media (max-width: 365px) {
-  section#skills div.skillContainer .skills span.skillTail {
-    display: none;
   }
 }
 
