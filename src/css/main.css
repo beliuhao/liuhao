@@ -867,7 +867,7 @@ section#contact #contactList p a:nth-child(2):hover {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 492px) {
   section#projects
     div.carousel
     div.carousel-item
@@ -877,5 +877,13 @@ section#contact #contactList p a:nth-child(2):hover {
     div.outline
     div {
     display: none;
+  }
+}
+
+@media (max-width: 492px) {
+  section#projects
+    div.carousel
+    {
+    min-height: 480px !important;
   }
 }
